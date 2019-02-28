@@ -2,11 +2,11 @@
 # Webtalk v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Thu Feb 28 05:22:38 2019
-# Process ID: 47508
+# Start of session at: Thu Feb 14 23:03:16 2019
+# Process ID: 43452
 # Current directory: O:/Documents/EE493_VHDL/EE493_Lab1/EE493_Lab1.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source O:/Documents/EE493_VHDL/EE493_Lab1/EE493_Lab1.sim/sim_1/behav/xsim/xsim.dir/fancy_counter_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv.exe -mode batch -source O:/Documents/EE493_VHDL/EE493_Lab1/EE493_Lab1.sim/sim_1/behav/xsim/xsim.dir/clock_div_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: O:/Documents/EE493_VHDL/EE493_Lab1/EE493_Lab1.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: O:/Documents/EE493_VHDL/EE493_Lab1/EE493_Lab1.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source O:/Documents/EE493_VHDL/EE493_Lab1/EE493_Lab1.sim/sim_1/behav/xsim/xsim.dir/fancy_counter_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+source O:/Documents/EE493_VHDL/EE493_Lab1/EE493_Lab1.sim/sim_1/behav/xsim/xsim.dir/clock_div_behav/webtalk/xsim_webtalk.tcl -notrace
