@@ -1,0 +1,1 @@
+-wto "88c793a0ebdd4162861433474046c230" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "blinker_tb_behav" "xil_defaultlib.blinker_tb" -log "elaborate.log" 

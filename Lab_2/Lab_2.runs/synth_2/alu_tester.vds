@@ -1,0 +1,307 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Mar  7 21:06:25 2019
+# Process ID: 29292
+# Current directory: G:/Documents/EE493_VHDL/Lab_2/Lab_2.runs/synth_2
+# Command line: vivado.exe -log alu_tester.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source alu_tester.tcl
+# Log file: G:/Documents/EE493_VHDL/Lab_2/Lab_2.runs/synth_2/alu_tester.vds
+# Journal file: G:/Documents/EE493_VHDL/Lab_2/Lab_2.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source alu_tester.tcl -notrace
+Command: synth_design -top alu_tester -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8360 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 336.203 ; gain = 100.715
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'alu_tester' [G:/Documents/EE493_VHDL/Lab_2/Lab_2.srcs/sources_1/new/alu_tester.vhd:13]
+INFO: [Synth 8-3491] module 'my_alu' declared at 'G:/Documents/EE493_VHDL/Lab_2/Lab_2.srcs/sources_1/new/ALU_16opr.vhd:7' bound to instance 'alu_4bit' of component 'my_alu' [G:/Documents/EE493_VHDL/Lab_2/Lab_2.srcs/sources_1/new/alu_tester.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'my_alu' [G:/Documents/EE493_VHDL/Lab_2/Lab_2.srcs/sources_1/new/ALU_16opr.vhd:12]
+INFO: [Synth 8-226] default block is never used [G:/Documents/EE493_VHDL/Lab_2/Lab_2.srcs/sources_1/new/ALU_16opr.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'my_alu' (1#1) [G:/Documents/EE493_VHDL/Lab_2/Lab_2.srcs/sources_1/new/ALU_16opr.vhd:12]
+INFO: [Synth 8-3491] module 'debounce' declared at 'G:/Documents/EE493_VHDL/Lab_2/Lab_2.srcs/sources_1/new/debounce.vhd:13' bound to instance 'debounce_0' of component 'debounce' [G:/Documents/EE493_VHDL/Lab_2/Lab_2.srcs/sources_1/new/alu_tester.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'debounce' [G:/Documents/EE493_VHDL/Lab_2/Lab_2.srcs/sources_1/new/debounce.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (2#1) [G:/Documents/EE493_VHDL/Lab_2/Lab_2.srcs/sources_1/new/debounce.vhd:19]
+INFO: [Synth 8-3491] module 'debounce' declared at 'G:/Documents/EE493_VHDL/Lab_2/Lab_2.srcs/sources_1/new/debounce.vhd:13' bound to instance 'debounce_1' of component 'debounce' [G:/Documents/EE493_VHDL/Lab_2/Lab_2.srcs/sources_1/new/alu_tester.vhd:40]
+INFO: [Synth 8-3491] module 'debounce' declared at 'G:/Documents/EE493_VHDL/Lab_2/Lab_2.srcs/sources_1/new/debounce.vhd:13' bound to instance 'debounce_2' of component 'debounce' [G:/Documents/EE493_VHDL/Lab_2/Lab_2.srcs/sources_1/new/alu_tester.vhd:45]
+INFO: [Synth 8-3491] module 'debounce' declared at 'G:/Documents/EE493_VHDL/Lab_2/Lab_2.srcs/sources_1/new/debounce.vhd:13' bound to instance 'debounce_3' of component 'debounce' [G:/Documents/EE493_VHDL/Lab_2/Lab_2.srcs/sources_1/new/alu_tester.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'alu_tester' (3#1) [G:/Documents/EE493_VHDL/Lab_2/Lab_2.srcs/sources_1/new/alu_tester.vhd:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 391.227 ; gain = 155.738
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 391.227 ; gain = 155.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 391.227 ; gain = 155.738
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [G:/Documents/EE493_VHDL/Lab_2/Lab_2.srcs/constrs_1/new/alu_test.xdc]
+Finished Parsing XDC File [G:/Documents/EE493_VHDL/Lab_2/Lab_2.srcs/constrs_1/new/alu_test.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [G:/Documents/EE493_VHDL/Lab_2/Lab_2.srcs/constrs_1/new/alu_test.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/alu_tester_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/alu_tester_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 728.867 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 728.867 ; gain = 493.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 728.867 ; gain = 493.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 728.867 ; gain = 493.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 728.867 ; gain = 493.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 4     
+	   3 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      4 Bit         XORs := 2     
++---Registers : 
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module alu_tester 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 4     
+Module my_alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 4     
+	   3 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      4 Bit         XORs := 2     
+Module debounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 728.867 ; gain = 493.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 728.867 ; gain = 493.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 745.730 ; gain = 510.242
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 745.730 ; gain = 510.242
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 745.730 ; gain = 510.242
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 745.730 ; gain = 510.242
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 745.730 ; gain = 510.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 745.730 ; gain = 510.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 745.730 ; gain = 510.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 745.730 ; gain = 510.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    28|
+|3     |LUT1   |     4|
+|4     |LUT2   |     3|
+|5     |LUT3   |     6|
+|6     |LUT4   |    12|
+|7     |LUT5   |    26|
+|8     |LUT6   |    33|
+|9     |FDRE   |   136|
+|10    |IBUF   |     9|
+|11    |OBUF   |     4|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------+-----------+------+
+|      |Instance     |Module     |Cells |
++------+-------------+-----------+------+
+|1     |top          |           |   262|
+|2     |  debounce_0 |debounce   |    51|
+|3     |  debounce_1 |debounce_0 |    51|
+|4     |  debounce_2 |debounce_1 |    51|
+|5     |  debounce_3 |debounce_2 |    51|
++------+-------------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 745.730 ; gain = 510.242
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 745.730 ; gain = 172.602
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 745.730 ; gain = 510.242
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 37 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 747.305 ; gain = 525.086
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'G:/Documents/EE493_VHDL/Lab_2/Lab_2.runs/synth_2/alu_tester.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file alu_tester_utilization_synth.rpt -pb alu_tester_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 747.305 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Mar  7 21:07:05 2019...
