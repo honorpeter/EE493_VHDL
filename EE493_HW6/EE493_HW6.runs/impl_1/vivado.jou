@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Mar 14 11:16:37 2019
+# Process ID: 9924
+# Current directory: G:/Documents/EE493_VHDL/EE493_HW6/EE493_HW6.runs/impl_1
+# Command line: vivado.exe -log Ch11_4_SFM.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Ch11_4_SFM.tcl -notrace
+# Log file: G:/Documents/EE493_VHDL/EE493_HW6/EE493_HW6.runs/impl_1/Ch11_4_SFM.vdi
+# Journal file: G:/Documents/EE493_VHDL/EE493_HW6/EE493_HW6.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Ch11_4_SFM.tcl -notrace
