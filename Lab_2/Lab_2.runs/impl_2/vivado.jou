@@ -2,11 +2,11 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Thu Mar  7 21:09:57 2019
-# Process ID: 28704
-# Current directory: G:/Documents/EE493_VHDL/Lab_2/Lab_2.runs/impl_2
+# Start of session at: Sun Mar 17 00:38:09 2019
+# Process ID: 56992
+# Current directory: O:/Documents/EE493_VHDL/Lab_2/Lab_2.runs/impl_2
 # Command line: vivado.exe -log alu_tester.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source alu_tester.tcl -notrace
-# Log file: G:/Documents/EE493_VHDL/Lab_2/Lab_2.runs/impl_2/alu_tester.vdi
-# Journal file: G:/Documents/EE493_VHDL/Lab_2/Lab_2.runs/impl_2\vivado.jou
+# Log file: O:/Documents/EE493_VHDL/Lab_2/Lab_2.runs/impl_2/alu_tester.vdi
+# Journal file: O:/Documents/EE493_VHDL/Lab_2/Lab_2.runs/impl_2\vivado.jou
 #-----------------------------------------------------------
 source alu_tester.tcl -notrace

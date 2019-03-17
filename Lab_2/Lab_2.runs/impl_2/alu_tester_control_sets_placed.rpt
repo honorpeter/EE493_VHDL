@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Thu Mar  7 21:08:10 2019
-| Host         : MSI running 64-bit major release  (build 9200)
+| Date         : Sun Mar 17 00:38:59 2019
+| Host         : DESKTOP-L28RN3T running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file alu_tester_control_sets_placed.rpt
 | Design       : alu_tester
 | Device       : xc7z010
@@ -60,14 +60,14 @@ Table of Contents
 +----------------+-----------------+----------------------------------+------------------+----------------+
 |  Clock Signal  |  Enable Signal  |         Set/Reset Signal         | Slice Load Count | Bel Load Count |
 +----------------+-----------------+----------------------------------+------------------+----------------+
-|  clk_IBUF_BUFG | debounce_0/E[0] | debounce_3/SR[0]                 |                1 |              8 |
 |  clk_IBUF_BUFG | debounce_1/E[0] | debounce_3/SR[0]                 |                1 |              8 |
 |  clk_IBUF_BUFG | debounce_2/E[0] | debounce_3/SR[0]                 |                1 |              8 |
+|  clk_IBUF_BUFG | debounce_0/E[0] | debounce_3/SR[0]                 |                1 |              8 |
 |  clk_IBUF_BUFG |                 |                                  |                8 |             32 |
-|  clk_IBUF_BUFG |                 | debounce_0/counter[0]_i_1_n_0    |                7 |             54 |
-|  clk_IBUF_BUFG |                 | debounce_1/counter[0]_i_1__0_n_0 |                7 |             54 |
 |  clk_IBUF_BUFG |                 | debounce_2/counter[0]_i_1__1_n_0 |                7 |             54 |
 |  clk_IBUF_BUFG |                 | debounce_3/counter[0]_i_1__2_n_0 |                7 |             54 |
+|  clk_IBUF_BUFG |                 | debounce_0/counter[0]_i_1_n_0    |                7 |             54 |
+|  clk_IBUF_BUFG |                 | debounce_1/counter[0]_i_1__0_n_0 |                7 |             54 |
 +----------------+-----------------+----------------------------------+------------------+----------------+
 
 

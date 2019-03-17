@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:G:/Documents/EE493_VHDL/Lab_2/Lab_2.srcs/constrs_1/new/alu_test.xdc rfile:../../../Lab_2.srcs/constrs_1/new/alu_test.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:O:/Documents/EE493_VHDL/Lab_2/Lab_2.srcs/constrs_1/new/alu_test.xdc rfile:../../../Lab_2.srcs/constrs_1/new/alu_test.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN L16   IOSTANDARD LVCMOS33 } [get_ports { clk }]; #IO_L11P_T1_SRCC_35 Sch=sysclk
 set_property src_info {type:XDC file:1 line:13 export:INPUT save:INPUT read:READ} [current_design]
