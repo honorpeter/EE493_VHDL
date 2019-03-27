@@ -35,7 +35,7 @@ begin
 					Z2 <= '0';
 					NS <= c;
 				elsif (X1 = '1') then 
-					Z2 <= '1';
+				    Z2 <= '1';
 					NS <= b;
 				end if;
 			when b =>

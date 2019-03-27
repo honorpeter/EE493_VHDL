@@ -30,10 +30,11 @@ sync_proc: process(clk)
 		if(PS = idle and NS = trans) then
 			buf_bits <= char;	
 		end if;
-		PS <= NS;
+		PS <= PS;
 		if (en = '1') then
         PS <= NS;
 		case PS is  
+			PS <= NS;
 			when idle =>
 			    buf_bit <= '1';
 				counter <= "0000";
@@ -47,22 +48,23 @@ sync_proc: process(clk)
                     NS <= idle;
 				end if;
 			when trans =>
-			    if(to_integer(unsigned(counter)) < 9) then
-			        if(to_integer(unsigned(counter))=0) then
-                        buf_bit <= '0';
-                    else 
-                        buf_bit <= buf_bits(to_integer(unsigned(counter))-1);
-                    end if;
-
-                    counter <= std_logic_vector(unsigned(counter) + 1);
-					NS <= trans;
-				--if counter = 9, reset counter, goes to idle
+			    if(to_integer(unsigned(counter))=0) then
+			        buf_bit <= '0';
 			    else
-			         buf_bit <= '1';
-			         counter <= "0000";
-                     NS <= idle;
-                end if;
-			    
+				    buf_bit <= buf_bits(to_integer(unsigned(counter))-1);
+				end if;
+				--ready <= '0';
+				--tx <= buf_bit;
+				--if counter < 7
+				if(to_integer(unsigned(counter)) = 8) then
+                    counter <= "0000";
+                    NS <= idle;
+                
+				else
+					counter <= std_logic_vector(unsigned(counter) + 1);
+					NS <= trans;
+				--if counter = 7, reset counter, goes to idle
+				end if;
             when others =>
                 buf_bit <= '1';
                 counter <= "0000";
