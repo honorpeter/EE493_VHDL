@@ -1,0 +1,401 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Mar 28 17:52:09 2019
+# Process ID: 18448
+# Current directory: G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.runs/synth_1
+# Command line: vivado.exe -log minicom.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source minicom.tcl
+# Log file: G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.runs/synth_1/minicom.vds
+# Journal file: G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source minicom.tcl -notrace
+Command: synth_design -top minicom -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10008 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 335.215 ; gain = 100.066
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'minicom' [G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/minicom.vhd:14]
+INFO: [Synth 8-3491] module 'clk_div' declared at 'G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/clock_div.vhd:5' bound to instance 'u3' of component 'clk_div' [G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/minicom.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/clock_div.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (1#1) [G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/clock_div.vhd:10]
+INFO: [Synth 8-3491] module 'debounce' declared at 'G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/debounce.vhd:4' bound to instance 'u1' of component 'debounce' [G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/minicom.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'debounce' [G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/debounce.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (2#1) [G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/debounce.vhd:10]
+INFO: [Synth 8-3491] module 'debounce' declared at 'G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/debounce.vhd:4' bound to instance 'u2' of component 'debounce' [G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/minicom.vhd:50]
+INFO: [Synth 8-3491] module 'sender' declared at 'G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/sender.vhd:6' bound to instance 'u4' of component 'sender' [G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/minicom.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'sender' [G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/sender.vhd:12]
+WARNING: [Synth 8-614] signal 'clk_en' is read in the process but is not in the sensitivity list [G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/sender.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'sender' (3#1) [G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/sender.vhd:12]
+INFO: [Synth 8-3491] module 'uart' declared at 'G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/uart.vhd:10' bound to instance 'u5' of component 'uart' [G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/minicom.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'uart' [G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/uart.vhd:21]
+INFO: [Synth 8-3491] module 'uart_rx' declared at 'G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/uart_rx.vhd:12' bound to instance 'r_x' of component 'uart_rx' [G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/uart.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/uart_rx.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (4#1) [G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/uart_rx.vhd:20]
+INFO: [Synth 8-3491] module 'uart_tx' declared at 'G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/uart_tx.vhd:5' bound to instance 't_x' of component 'uart_tx' [G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/uart.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/uart_tx.vhd:11]
+INFO: [Synth 8-226] default block is never used [G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/uart_tx.vhd:36]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/uart_tx.vhd:19]
+INFO: [Synth 8-226] default block is never used [G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/uart_tx.vhd:76]
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (5#1) [G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/uart_tx.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'uart' (6#1) [G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/uart.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'minicom' (7#1) [G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/minicom.vhd:14]
+WARNING: [Synth 8-3917] design minicom has port CTS driven by constant 0
+WARNING: [Synth 8-3917] design minicom has port RTS driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 390.445 ; gain = 155.297
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 390.445 ; gain = 155.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 390.445 ; gain = 155.297
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/constrs_1/new/uart_test.xdc]
+Finished Parsing XDC File [G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/constrs_1/new/uart_test.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/constrs_1/new/uart_test.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/minicom_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/minicom_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 730.035 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 730.035 ; gain = 494.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 730.035 ; gain = 494.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 730.035 ; gain = 494.887
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'PS_reg' in module 'sender'
+INFO: [Synth 8-5544] ROM "PS" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "PS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'curr_reg' in module 'uart_rx'
+INFO: [Synth 8-5544] ROM "curr" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                   busya |                               01 |                               01
+                   busyb |                               10 |                               10
+                   busyc |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'PS_reg' using encoding 'sequential' in module 'sender'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+                   start |                              010 |                               01
+                    data |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_reg' using encoding 'one-hot' in module 'uart_rx'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 730.035 ; gain = 494.887
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   6 Input      7 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 15    
+	   4 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clk_div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
+Module debounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module sender 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      7 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 5     
+Module uart_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      3 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 4     
+Module uart_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element u5/r_x/newChar_reg was removed.  [G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/uart_rx.vhd:72]
+WARNING: [Synth 8-6014] Unused sequential element u5/r_x/d_reg was removed.  [G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/uart_rx.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element u5/r_x/char_reg was removed.  [G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.srcs/sources_1/new/uart_rx.vhd:96]
+WARNING: [Synth 8-3917] design minicom has port CTS driven by constant 0
+WARNING: [Synth 8-3917] design minicom has port RTS driven by constant 0
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u4/char_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u5/t_x/buf_bits_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (u4/char_reg[3]) is unused and will be removed from module minicom.
+WARNING: [Synth 8-3332] Sequential element (u5/t_x/buf_bits_reg[3]) is unused and will be removed from module minicom.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 730.035 ; gain = 494.887
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 730.035 ; gain = 494.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 743.527 ; gain = 508.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 745.059 ; gain = 509.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 745.059 ; gain = 509.910
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 745.059 ; gain = 509.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 745.059 ; gain = 509.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 745.059 ; gain = 509.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 745.059 ; gain = 509.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 745.059 ; gain = 509.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    33|
+|3     |LUT1   |     4|
+|4     |LUT2   |     8|
+|5     |LUT3   |    22|
+|6     |LUT4   |     1|
+|7     |LUT5   |    11|
+|8     |LUT6   |    32|
+|9     |FDRE   |   127|
+|10    |FDSE   |     1|
+|11    |IBUF   |     4|
+|12    |OBUF   |     3|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-----------+------+
+|      |Instance |Module     |Cells |
++------+---------+-----------+------+
+|1     |top      |           |   247|
+|2     |  u1     |debounce   |    50|
+|3     |  u2     |debounce_0 |    50|
+|4     |  u3     |clk_div    |    65|
+|5     |  u4     |sender     |    30|
+|6     |  u5     |uart       |    44|
+|7     |    r_x  |uart_rx    |    18|
+|8     |    t_x  |uart_tx    |    26|
++------+---------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 745.059 ; gain = 509.910
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 745.059 ; gain = 170.320
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 745.059 ; gain = 509.910
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 37 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 745.059 ; gain = 522.918
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.runs/synth_1/minicom.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file minicom_utilization_synth.rpt -pb minicom_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 745.059 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 28 17:52:49 2019...

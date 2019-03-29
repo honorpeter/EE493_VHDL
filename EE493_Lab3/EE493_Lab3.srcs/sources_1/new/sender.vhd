@@ -21,7 +21,9 @@ constant net_id : Ascii_string := (
         4 => "00110011",  --3: 33
         5 => "00110010"  --2: 32
         );
-constant n: integer := 5;
+--constant n: integer := 6;
+constant n: std_logic_vector(2 downto 0) := std_logic_vector(to_unsigned(6, 3));
+
 type state_type is (idle, busyA, busyB, busyC);
 signal PS: state_type := idle;
 --signal NS: state_type := idle;
@@ -45,17 +47,17 @@ signal PS: state_type := idle;
                     when idle =>
 
                         if(ready = '1' and btn = '1') then
-                            
+                        
+                            char <= net_id(To_integer(unsigned(i)));
                             -- IF sending is done, reset index and stay idle.
-                            if(to_integer(unsigned(i)) = n) then
-
+                            if(unsigned(i) = unsigned(n)) then
+                                
                                 i := std_logic_vector(To_unsigned(0, 3));
                                 PS <= idle;
                             
                             -- ELSE: set send to 1 and begin trasmitting to the computer 
-                            elsif(to_integer(unsigned(i)) < n) then
-
-                                char <= net_id(To_integer(unsigned(i)));
+                            elsif(unsigned(i) < unsigned(n)) then
+                                
                                 i := std_logic_vector(unsigned(i) + 1);
                                 send <= '1';
                                 --NS <= busyB;
@@ -94,51 +96,5 @@ signal PS: state_type := idle;
 
         
     end process;
-
-    --process(PS)
-
-    --    begin
-    --    case PS is
-
-    --    	when idle =>
-
-    --    		if(ready = '1' and btn = '1') then
-
-    --    			if(to_integer(unsigned(i)) = n) then
-
-    --    				i <= std_logic_vector(To_unsigned(0));
-    --    				NS <= idle;
-        			
-    --    			elsif(to_integer(unsigned(i)) < n) then
-
-    --    				char <= net_id(i);
-    --    				i <= std_logic_vector(To_unsigned( i+1 ));
-    --                    send <= '1';
-    --    				NS <= busyA;
-    --    			end if;
-    --            end if;
-            
-    --        when busyA =>
-
-    --            NS <= busyB;
-
-    --        when busyB =>
-
-    --            send <= '0';
-    --            NS <= busyC;
-
-    --        when busyC =>
-
-    --            if(ready = '1' and btn = '0') then
-
-    --                NS <= idle;
-    --            else
-
-    --                NS <= busyC;
-    --            end if;
-    --        end case;
-        		
-
-    --    end process;
 
 end Behavioral;

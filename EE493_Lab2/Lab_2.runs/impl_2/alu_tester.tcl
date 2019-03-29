@@ -68,12 +68,12 @@ set rc [catch {
   create_project -in_memory -part xc7z010clg400-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir O:/Documents/EE493_VHDL/Lab_2/Lab_2.cache/wt [current_project]
-  set_property parent.project_path O:/Documents/EE493_VHDL/Lab_2/Lab_2.xpr [current_project]
-  set_property ip_output_repo O:/Documents/EE493_VHDL/Lab_2/Lab_2.cache/ip [current_project]
+  set_property webtalk.parent_dir G:/Documents/EE493_VHDL/EE493_Lab2/Lab_2.cache/wt [current_project]
+  set_property parent.project_path G:/Documents/EE493_VHDL/EE493_Lab2/Lab_2.xpr [current_project]
+  set_property ip_output_repo G:/Documents/EE493_VHDL/EE493_Lab2/Lab_2.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet O:/Documents/EE493_VHDL/Lab_2/Lab_2.runs/synth_2/alu_tester.dcp
-  read_xdc O:/Documents/EE493_VHDL/Lab_2/Lab_2.srcs/constrs_1/new/alu_test.xdc
+  add_files -quiet G:/Documents/EE493_VHDL/EE493_Lab2/Lab_2.runs/synth_2/alu_tester.dcp
+  read_xdc G:/Documents/EE493_VHDL/EE493_Lab2/Lab_2.srcs/constrs_1/new/alu_test.xdc
   link_design -top alu_tester -part xc7z010clg400-1
   close_msg_db -file init_design.pb
 } RESULT]
@@ -146,6 +146,24 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
+  unset ACTIVE_STEP 
+}
+
+start_step write_bitstream
+set ACTIVE_STEP write_bitstream
+set rc [catch {
+  create_msg_db write_bitstream.pb
+  catch { write_mem_info -force alu_tester.mmi }
+  write_bitstream -force alu_tester.bit 
+  catch {write_debug_probes -quiet -force alu_tester}
+  catch {file copy -force alu_tester.ltx debug_nets.ltx}
+  close_msg_db -file write_bitstream.pb
+} RESULT]
+if {$rc} {
+  step_failed write_bitstream
+  return -code error $RESULT
+} else {
+  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 

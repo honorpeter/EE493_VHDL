@@ -6,6 +6,9 @@ entity minicom is
     port(TXD, clk: in std_logic;
     	 btn:      in std_logic_vector(1 downto 0);
     	 RXD, CTS, RTS: out std_logic);
+    	 --for debugging:
+    	 --div_out: out std_logic;
+    	 --newChar: out std_logic_vector(7 downto 0));
 end minicom;
 
 architecture top_arch of minicom is
@@ -54,7 +57,8 @@ u4: sender port map (clk => clk,
 					 btn => dbnce1,
 					 clk_en => div,
 					 send => send,
-					 char => char);
+					 char => char
+					 );
 
 u5: uart port map (clk => clk,
 				   rst => dbnce0,
@@ -67,5 +71,9 @@ u5: uart port map (clk => clk,
 
 CTS <= '0';
 RTS <= '0';
+
+--for Debugging:
+--newChar <= char;
+--div_out <= div;
 
 end top_arch;

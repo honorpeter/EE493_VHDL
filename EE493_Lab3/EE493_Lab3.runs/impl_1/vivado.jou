@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Mar 28 17:53:05 2019
+# Process ID: 20516
+# Current directory: G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.runs/impl_1
+# Command line: vivado.exe -log minicom.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source minicom.tcl -notrace
+# Log file: G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.runs/impl_1/minicom.vdi
+# Journal file: G:/Documents/EE493_VHDL/EE493_Lab3/EE493_Lab3.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source minicom.tcl -notrace

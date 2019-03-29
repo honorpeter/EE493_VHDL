@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1552009961">
-  <File Type="PA-TCL" Name="alu_tester.tcl"/>
   <File Type="BITSTR-BMM" Name="alu_tester_bd.bmm"/>
-  <File Type="REPORTS-TCL" Name="alu_tester_reports.tcl"/>
+  <File Type="ROUTE-PWR" Name="alu_tester_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="alu_tester.tcl"/>
   <File Type="OPT-DCP" Name="alu_tester_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="alu_tester_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="alu_tester_reports.tcl"/>
   <File Type="OPT-HWDEF" Name="alu_tester.hwdef"/>
+  <File Type="BG-BGN" Name="alu_tester.bgn"/>
   <File Type="PWROPT-DCP" Name="alu_tester_pwropt.dcp"/>
   <File Type="PLACE-DCP" Name="alu_tester_placed.dcp"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="alu_tester_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BGN" Name="alu_tester.bgn"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="alu_tester_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="alu_tester.bin"/>
   <File Type="PHYSOPT-DCP" Name="alu_tester_physopt.dcp"/>
@@ -16,8 +18,11 @@
   <File Type="ROUTE-ERROR-DCP" Name="alu_tester_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="alu_tester_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="alu_tester_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC-RPX" Name="alu_tester_drc_routed.rpx"/>
   <File Type="BITSTR-LTX" Name="alu_tester.ltx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="alu_tester_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-MMI" Name="alu_tester.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="alu_tester_methodology_drc_routed.pb"/>
   <File Type="BITSTR-SYSDEF" Name="alu_tester.sysdef"/>
   <File Type="ROUTE-TIMING-PB" Name="alu_tester_timing_summary_routed.pb"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="alu_tester_postroute_physopt.dcp"/>
@@ -26,8 +31,25 @@
   <File Type="BITSTR-RBT" Name="alu_tester.rbt"/>
   <File Type="BITSTR-NKY" Name="alu_tester.nky"/>
   <File Type="BG-DRC" Name="alu_tester.drc"/>
+  <File Type="ROUTE-CLK" Name="alu_tester_clock_utilization_routed.rpt"/>
   <File Type="RDI-RDI" Name="alu_tester.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="alu_tester_drc_opted.rpt"/>
+  <File Type="PLACE-UTIL" Name="alu_tester_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="alu_tester_utilization_placed.pb"/>
+  <File Type="PLACE-IO" Name="alu_tester_io_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="alu_tester_control_sets_placed.rpt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="alu_tester_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="alu_tester_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="alu_tester_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="alu_tester_route_status.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="alu_tester_power_routed.rpx"/>
+  <File Type="ROUTE-DRC" Name="alu_tester_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="alu_tester_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="alu_tester_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW" Name="alu_tester_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="alu_tester_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="alu_tester_bus_skew_routed.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/ALU_16opr.vhd">
