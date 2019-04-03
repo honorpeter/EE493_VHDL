@@ -20,6 +20,7 @@
 !*.bd
 !*.edif
 !*coe
+!*.coe
 !*.jpg
 #########
 #IP files

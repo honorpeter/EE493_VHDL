@@ -31,7 +31,7 @@ signal counter_h : std_logic_vector(9 downto 0) := (others => '0');
 signal counter_v : std_logic_vector(9 downto 0) := (others => '0');
 begin
 
-process (clk)
+process (clk, en)
 
 	begin
 	if(rising_edge(clk) and en = '1') then

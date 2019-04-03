@@ -1,0 +1,2 @@
+picture_blk_mem_gen_0_0_sim_netlist.vhdl,vhdl,xil_defaultlib,../../../bd/picture/ip/picture_blk_mem_gen_0_0/picture_blk_mem_gen_0_0_sim_netlist.vhdl,
+picture.vhd,vhdl,xil_defaultlib,../../../bd/picture/sim/picture.vhd,
