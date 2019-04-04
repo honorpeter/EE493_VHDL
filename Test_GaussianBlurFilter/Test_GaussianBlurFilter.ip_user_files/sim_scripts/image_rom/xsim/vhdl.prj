@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../bd/image_rom/sim/image_rom.vhd" \
+
+nosort
