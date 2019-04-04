@@ -18,11 +18,11 @@ component clk_div is
        div:   out std_logic);
 end component;
 
-component picture is
-    port (
-    rom_addr : in STD_LOGIC_VECTOR ( 17 downto 0 );
-    rom_clk : in STD_LOGIC;
-    rom_dout : out STD_LOGIC_VECTOR ( 7 downto 0 )
+component image_rom is
+   port (
+    image_rom_addr : in STD_LOGIC_VECTOR ( 17 downto 0 );
+    image_rom_clk : in STD_LOGIC;
+    image_rom_dout : out STD_LOGIC_VECTOR ( 7 downto 0 )
   );
 end component;
 
@@ -57,9 +57,10 @@ begin
 clk_div_0: clk_div port map (clk => clk,
 							 div => en_sig);
 
-picture_0: picture port map(rom_clk => en_sig,
-							rom_addr => addr_sig,
-							rom_dout => pixel_sig );
+image_rom_0: image_rom port map(image_rom_clk => en_sig,
+                                                         image_rom_addr => addr_sig,
+                                                         image_rom_dout => pixel_sig );
+
 
 vga_ctrl_0: vga_ctrl port map(clk => clk,
 							  en => en_sig,
