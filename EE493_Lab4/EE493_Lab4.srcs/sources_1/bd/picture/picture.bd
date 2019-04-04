@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0xC5F9E7BBE560BBB1" bd:device="xc7z010clg400-1" bd:isValidated="true" bd:synthFlowMode="Hierarchical" bd:tool_version="2018.2" bd:top="picture" bd:version="1.00.a">
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0xC5F9E7BBE72A8528" bd:device="xc7z010clg400-1" bd:isValidated="true" bd:synthFlowMode="Hierarchical" bd:tool_version="2018.2" bd:top="picture" bd:version="1.00.a">
 
   <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
     <spirit:vendor>xilinx.com</spirit:vendor>
@@ -21,19 +21,19 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>MEM_SIZE</spirit:name>
-            <spirit:value>8192</spirit:value>
+            <spirit:value>230400</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="default"/>
+                <bd:configElementInfo bd:valueSource="user"/>
               </bd:configElementInfos>
             </spirit:vendorExtensions>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>MEM_WIDTH</spirit:name>
-            <spirit:value>32</spirit:value>
+            <spirit:value>8</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="default"/>
+                <bd:configElementInfo bd:valueSource="user"/>
               </bd:configElementInfos>
             </spirit:vendorExtensions>
           </spirit:parameter>

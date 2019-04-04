@@ -3,7 +3,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity image_dvi_top is
-	port(clk, rst: in std_logic;
+	port(clk, rst, aRst_n: in std_logic;
 		 TMDS_clk_n, TMDS_clk_p:  out std_logic;
 		 TMDS_data_n, TMDS_data_p:  out std_logic_vector(2 downto 0));
 end image_dvi_top;
@@ -53,7 +53,7 @@ component rgb2dvi is
       
       -- Auxiliary signals 
       aRst : in std_logic; --asynchronous reset; must be reset when RefClk is not within spec
-      --aRst_n : in std_logic; --asynchronous reset; must be reset when RefClk is not within spec
+      aRst_n : in std_logic; --asynchronous reset; must be reset when RefClk is not within spec
       
       -- Video in
       vid_pData : in std_logic_vector(23 downto 0);
@@ -100,7 +100,8 @@ color_8_24_0: color_8bit_24bit port map(clk => clk,
 									  
 rgb2dvi_0: rgb2dvi port map(SerialClk => clk,
                             PixelClk => en_sig,
-                            aRst => rst,									 									  
+                            aRst => rst,
+                            aRst_n => aRst_n,									 									  
                             vid_pData => data_sig,
                             vid_pVDE => vid_sig,
                             vid_pHSync => HS_sig,

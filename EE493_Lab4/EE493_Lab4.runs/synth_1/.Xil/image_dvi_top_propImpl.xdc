@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:G:/Documents/EE493_VHDL/EE493_Lab4/EE493_Lab4.srcs/img_hdmi/new/img_dvi_top.xdc rfile:../../../EE493_Lab4.srcs/img_hdmi/new/img_dvi_top.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:O:/Documents/EE493_VHDL/EE493_Lab4/EE493_Lab4.srcs/img_hdmi/new/img_dvi_top.xdc rfile:../../../EE493_Lab4.srcs/img_hdmi/new/img_dvi_top.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN K17   IOSTANDARD LVCMOS33 } [get_ports { clk }]; #IO_L12P_T1_MRCC_35 Sch=sysclk
 set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]
@@ -11,3 +11,11 @@ set_property src_info {type:XDC file:1 line:17 export:INPUT save:INPUT read:READ
 set_property -dict { PACKAGE_PIN D20   IOSTANDARD TMDS_33     } [get_ports { TMDS_data_n[0] }]; #IO_L4N_T0_35 Sch=hdmi_tx_n[0]
 set_property src_info {type:XDC file:1 line:18 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN D19   IOSTANDARD TMDS_33     } [get_ports { TMDS_data_p[0] }]; #IO_L4P_T0_35 Sch=hdmi_tx_p[0]
+set_property src_info {type:XDC file:1 line:19 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN B20   IOSTANDARD TMDS_33     } [get_ports { TMDS_data_n[1] }]; #IO_L1N_T0_AD0N_35 Sch=hdmi_tx_n[1]
+set_property src_info {type:XDC file:1 line:20 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN C20   IOSTANDARD TMDS_33     } [get_ports { TMDS_data_p[1] }]; #IO_L1P_T0_AD0P_35 Sch=hdmi_tx_p[1]
+set_property src_info {type:XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN A20   IOSTANDARD TMDS_33     } [get_ports { TMDS_data_n[2] }]; #IO_L2N_T0_AD8N_35 Sch=hdmi_tx_n[2]
+set_property src_info {type:XDC file:1 line:22 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN B19   IOSTANDARD TMDS_33     } [get_ports { TMDS_data_p[2] }]; #IO_L2P_T0_AD8P_35 Sch=hdmi_tx_p[2]

@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Wed Apr  3 01:26:54 2019
-| Host         : MSI running 64-bit major release  (build 9200)
+| Date         : Thu Apr  4 00:17:09 2019
+| Host         : DESKTOP-L28RN3T running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file image_dvi_top_clock_utilization_routed.rpt
 | Design       : image_dvi_top
 | Device       : 7z010-clg400
@@ -64,7 +64,7 @@ Table of Contents
 +-----------+-----------+-------------------+------------+----------------+--------------+-------------+-----------------+---------------------+--------------+----------------------------------------------------------------------+------------------------------------------------+
 | Source Id | Global Id | Driver Type/Pin   | Constraint | Site           | Clock Region | Clock Loads | Non-Clock Loads | Source Clock Period | Source Clock | Driver Pin                                                           | Net                                            |
 +-----------+-----------+-------------------+------------+----------------+--------------+-------------+-----------------+---------------------+--------------+----------------------------------------------------------------------+------------------------------------------------+
-| src0      | g0        | FDRE/Q            | None       | SLICE_X21Y46   | X0Y0         |           1 |               9 |                     |              | clk_div_0/div_reg/Q                                                  | clk_div_0/en_sig                               |
+| src0      | g0        | FDRE/Q            | None       | SLICE_X21Y47   | X0Y0         |           1 |               9 |                     |              | clk_div_0/div_reg/Q                                                  | clk_div_0/en_sig                               |
 | src1      | g1        | IBUF/O            | IOB_X0Y76  | IOB_X0Y76      | X1Y1         |           1 |               0 |               8.000 | sys_clk_pin  | clk_IBUF_inst/O                                                      | clk_IBUF                                       |
 | src2      | g2        | PLLE2_ADV/CLKOUT1 | None       | PLLE2_ADV_X0Y0 | X1Y0         |           1 |               0 |                     |              | rgb2dvi_0/ClockGenInternal.ClockGenX/GenPLL.DVI_ClkGenerator/CLKOUT1 | rgb2dvi_0/ClockGenInternal.ClockGenX/PixelClk  |
 | src2      | g3        | PLLE2_ADV/CLKOUT0 | None       | PLLE2_ADV_X0Y0 | X1Y0         |           1 |               0 |                     |              | rgb2dvi_0/ClockGenInternal.ClockGenX/GenPLL.DVI_ClkGenerator/CLKOUT0 | rgb2dvi_0/ClockGenInternal.ClockGenX/SerialClk |
@@ -82,9 +82,9 @@ Table of Contents
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | X0Y0              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    1 |  1100 |    0 |   400 |    0 |    20 |   10 |    10 |    0 |    20 |
-| X1Y0              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    1 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   35 |  1100 |    0 |   350 |    0 |    40 |   19 |    20 |    0 |    20 |
-| X0Y1              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    3 |  1100 |    0 |   400 |    0 |    20 |    7 |    10 |    0 |    20 |
-| X1Y1              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    8 |    50 |  122 |  1100 |   32 |   350 |    0 |    40 |   20 |    20 |    0 |    20 |
+| X1Y0              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    1 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   29 |  1100 |    0 |   350 |    0 |    40 |   19 |    20 |    0 |    20 |
+| X0Y1              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    3 |  1100 |    0 |   400 |    0 |    20 |    9 |    10 |    0 |    20 |
+| X1Y1              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    8 |    50 |  128 |  1100 |   56 |   350 |    0 |    40 |   18 |    20 |    0 |    20 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 * Global Clock column represents track count; while other columns represents cell counts
 
@@ -118,8 +118,8 @@ All Modules
 +----+-----+------+
 |    | X0  | X1   |
 +----+-----+------+
-| Y1 |  10 |  101 |
-| Y0 |  10 |   24 |
+| Y1 |  12 |  101 |
+| Y0 |  10 |   22 |
 +----+-----+------+
 
 
@@ -140,8 +140,8 @@ All Modules
 +----+----+-----+
 |    | X0 | X1  |
 +----+----+-----+
-| Y1 |  0 |  48 |
-| Y0 |  1 |  33 |
+| Y1 |  0 |  53 |
+| Y0 |  1 |  28 |
 +----+----+-----+
 
 
@@ -209,8 +209,8 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+---------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net           |
 +-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+---------------+
-| g0        | n/a   | BUFG/O          | None       |          23 |               1 |  3 |      0 |   19 |   0 |  0 |    0 |   1 |       0 | en_sig_BUFG   |
-| g1        | n/a   | BUFG/O          | None       |          33 |               0 | 33 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | clk_IBUF_BUFG |
+| g0        | n/a   | BUFG/O          | None       |          22 |               0 |  1 |      0 |   19 |   0 |  0 |    0 |   1 |       0 | en_sig_BUFG   |
+| g1        | n/a   | BUFG/O          | None       |          28 |               0 | 28 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | clk_IBUF_BUFG |
 +-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+---------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
@@ -223,7 +223,7 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+-------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net         |
 +-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+-------------+
-| g0        | n/a   | BUFG/O          | None       |          10 |               0 |  3 |      0 |    7 |   0 |  0 |    0 |   0 |       0 | en_sig_BUFG |
+| g0        | n/a   | BUFG/O          | None       |          12 |               0 |  3 |      0 |    9 |   0 |  0 |    0 |   0 |       0 | en_sig_BUFG |
 +-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+-------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
@@ -236,8 +236,8 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+-----------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                 |
 +-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+-----------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |          94 |               7 | 81 |      0 |   20 |   0 |  0 |    0 |   0 |       0 | en_sig_BUFG                                         |
-| g1        | n/a   | BUFG/O          | None       |          48 |               0 | 48 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | clk_IBUF_BUFG                                       |
+| g0        | n/a   | BUFG/O          | None       |          93 |               8 | 83 |      0 |   18 |   0 |  0 |    0 |   0 |       0 | en_sig_BUFG                                         |
+| g1        | n/a   | BUFG/O          | None       |          53 |               0 | 53 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | clk_IBUF_BUFG                                       |
 | g2        | n/a   | BUFG/O          | None       |           8 |               0 |  0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | rgb2dvi_0/ClockGenInternal.ClockGenX/PixelClk_BUFG  |
 | g3        | n/a   | BUFG/O          | None       |           8 |               0 |  0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | rgb2dvi_0/ClockGenInternal.ClockGenX/SerialClk_BUFG |
 +-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+-----------------------------------------------------+

@@ -1,5 +1,5 @@
 vhdl xil_defaultlib  \
-"../../../bd/picture/ip/picture_blk_mem_gen_0_0/picture_blk_mem_gen_0_0_sim_netlist.vhdl" \
+"o:/Documents/EE493_VHDL/EE493_Lab4/EE493_Lab4.srcs/sources_1/bd/picture/ip/picture_blk_mem_gen_0_0/picture_blk_mem_gen_0_0_sim_netlist.vhdl" \
 "../../../bd/picture/sim/picture.vhd" \
 
 nosort

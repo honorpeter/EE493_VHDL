@@ -157,6 +157,8 @@ proc create_root_design { parentCell } {
   # Create interface ports
   set rom [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:bram_rtl:1.0 rom ]
   set_property -dict [ list \
+   CONFIG.MEM_SIZE {230400} \
+   CONFIG.MEM_WIDTH {8} \
    CONFIG.READ_WRITE_MODE {READ_ONLY} \
    ] $rom
 

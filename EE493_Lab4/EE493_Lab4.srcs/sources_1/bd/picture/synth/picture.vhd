@@ -1,8 +1,8 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
---Date        : Sun Mar 31 17:23:25 2019
---Host        : MSI running 64-bit major release  (build 9200)
+--Date        : Wed Apr  3 23:55:35 2019
+--Host        : DESKTOP-L28RN3T running 64-bit major release  (build 9200)
 --Command     : generate_target picture.bd
 --Design      : picture
 --Purpose     : IP block netlist
@@ -34,12 +34,12 @@ architecture STRUCTURE of picture is
   signal BRAM_PORTA_0_0_ADDR : STD_LOGIC_VECTOR ( 17 downto 0 );
   signal BRAM_PORTA_0_0_CLK : STD_LOGIC;
   signal BRAM_PORTA_0_0_DOUT : STD_LOGIC_VECTOR ( 7 downto 0 );
-  attribute x_interface_info : string;
-  attribute x_interface_info of rom_clk : signal is "xilinx.com:interface:bram:1.0 rom ";
-  attribute x_interface_info of rom_addr : signal is "xilinx.com:interface:bram:1.0 rom ";
-  attribute x_interface_parameter : string;
-  attribute x_interface_parameter of rom_addr : signal is "XIL_INTERFACENAME rom, MASTER_TYPE OTHER, MEM_ECC NONE, MEM_SIZE 8192, MEM_WIDTH 32, READ_WRITE_MODE READ_ONLY";
-  attribute x_interface_info of rom_dout : signal is "xilinx.com:interface:bram:1.0 rom ";
+  attribute X_INTERFACE_INFO : string;
+  attribute X_INTERFACE_INFO of rom_clk : signal is "xilinx.com:interface:bram:1.0 rom CLK";
+  attribute X_INTERFACE_INFO of rom_addr : signal is "xilinx.com:interface:bram:1.0 rom ADDR";
+  attribute X_INTERFACE_PARAMETER : string;
+  attribute X_INTERFACE_PARAMETER of rom_addr : signal is "XIL_INTERFACENAME rom, MASTER_TYPE OTHER, MEM_ECC NONE, MEM_SIZE 230400, MEM_WIDTH 8, READ_WRITE_MODE READ_ONLY";
+  attribute X_INTERFACE_INFO of rom_dout : signal is "xilinx.com:interface:bram:1.0 rom DOUT";
 begin
   BRAM_PORTA_0_0_ADDR(17 downto 0) <= rom_addr(17 downto 0);
   BRAM_PORTA_0_0_CLK <= rom_clk;
