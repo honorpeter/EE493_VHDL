@@ -1,3 +1,0 @@
-clk_200MHz_clk_wiz_0_0_sim_netlist.vhdl,vhdl,xil_defaultlib,../../../bd/clk_200MHz/ip/clk_200MHz_clk_wiz_0_0/clk_200MHz_clk_wiz_0_0_sim_netlist.vhdl,incdir="../../../../EE493_Lab4.srcs/sources_1/bd/clk_200MHz/ipshared/b65a"
-clk_200MHz.vhd,vhdl,xil_defaultlib,../../../bd/clk_200MHz/sim/clk_200MHz.vhd,incdir="../../../../EE493_Lab4.srcs/sources_1/bd/clk_200MHz/ipshared/b65a"
-glbl.v,Verilog,xil_defaultlib,glbl.v

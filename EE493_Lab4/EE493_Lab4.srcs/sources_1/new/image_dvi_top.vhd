@@ -5,6 +5,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity image_dvi_top is
 	port(clk, rst:  in std_logic;
 	     aRst_n: in std_logic := '1';
+	     Data_24: out std_logic_vector(23 downto 0); 
 		 TMDS_clk_n, TMDS_clk_p:  out std_logic;
 		 TMDS_data_n, TMDS_data_p:  out std_logic_vector(2 downto 0));
 end image_dvi_top;
@@ -29,7 +30,7 @@ component picture is
 end component;
 
 component vga_ctrl_800_600 is
-	port ( clk, en: in std_logic;
+	port ( en: in std_logic;
 			vid: out std_logic := '0';
 			HS: out std_logic := '1';
 			VS: out std_logic := '1';
@@ -38,7 +39,7 @@ component vga_ctrl_800_600 is
 end component;
 
 component color_8bit_24bit_800_600 is
-	port( clk, en, VS, vid: in std_logic;
+	port( en, VS, vid: in std_logic;
 		  hcount: in std_logic_vector(10 downto 0);
 		  vcount: in std_logic_vector(9 downto 0);
 		  color_8: in std_logic_vector(7 downto 0);
@@ -89,7 +90,7 @@ picture_0: picture port map(rom_clk => en_sig,
 							rom_addr => addr_sig,
 							rom_dout => pixel_sig );
 
-vga_ctrl_0: vga_ctrl_800_600 port map(clk => clk_fast_sig,
+vga_ctrl_0: vga_ctrl_800_600 port map(--clk => clk_fast_sig,
 							  en => en_sig,
 							  vid => vid_sig,
 							  HS => HS_sig,
@@ -97,7 +98,7 @@ vga_ctrl_0: vga_ctrl_800_600 port map(clk => clk_fast_sig,
 							  hcount => hcount_sig,
 							  vcount => vcount_sig);
 
-color_8_24_0: color_8bit_24bit_800_600 port map(clk => clk_fast_sig,
+color_8_24_0: color_8bit_24bit_800_600 port map(--clk => clk_fast_sig,
 									  en => en_sig,
 									  vid => vid_sig,
 									  VS => VS_sig,
@@ -120,4 +121,5 @@ rgb2dvi_0: rgb2dvi port map(SerialClk => clk_fast_sig,
                             TMDS_Data_p => TMDS_Data_p,
                             TMDS_Data_n => TMDS_Data_n);
                             
+data_24 <= data_sig;
 end top_arch;

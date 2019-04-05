@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Thu Apr  4 23:02:36 2019
-| Host         : DESKTOP-L28RN3T running 64-bit major release  (build 9200)
+| Date         : Fri Apr  5 01:29:23 2019
+| Host         : MSI running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file image_dvi_top_control_sets_placed.rpt
 | Design       : image_dvi_top
 | Device       : xc7z010
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     9 |
-| Unused register locations in slices containing registers |    22 |
+| Number of unique control sets                            |    10 |
+| Unused register locations in slices containing registers |    32 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,8 +34,8 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|      4 |            1 |
-|     14 |            1 |
+|      4 |            2 |
+|      8 |            1 |
 |    16+ |            7 |
 +--------+--------------+
 
@@ -46,30 +46,31 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              94 |           24 |
-| No           | No                    | Yes                    |               4 |            1 |
-| No           | Yes                   | No                     |              58 |            8 |
+| No           | No                    | No                     |             212 |           75 |
+| No           | No                    | Yes                    |              16 |            3 |
+| No           | Yes                   | No                     |              90 |           16 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              86 |           18 |
+| Yes          | Yes                   | No                     |              74 |           12 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+-------------------------------------------------+-----------------------------------------------+--------------------------------------------------------------+------------------+----------------+
-|                   Clock Signal                  |                 Enable Signal                 |                       Set/Reset Signal                       | Slice Load Count | Bel Load Count |
-+-------------------------------------------------+-----------------------------------------------+--------------------------------------------------------------+------------------+----------------+
-|  clk_40MHz_200MHz_0/clk_40_200/inst/clk_40_out  |                                               | rst_IBUF                                                     |                1 |              4 |
-|  clk_40MHz_200MHz_0/clk_40_200/inst/clk_200_out |                                               |                                                              |                5 |             14 |
-|  clk_40MHz_200MHz_0/clk_40_200/inst/clk_200_out | clk_40MHz_200MHz_0/clk_40_200/inst/clk_40_out | color_8_24_0/color_24[23]_i_1_n_0                            |                8 |             16 |
-|  clk_40MHz_200MHz_0/clk_40_200/inst/clk_200_out | vga_ctrl_0/counter_h0                         | vga_ctrl_0/counter_h[9]_i_1_n_0                              |                3 |             16 |
-|  clk_40MHz_200MHz_0/clk_40_200/inst/clk_40_out  |                                               | rgb2dvi_0/DataEncoders[0].DataEncoder/pDataOutRaw[9]_i_1_n_0 |                1 |             16 |
-|  clk_40MHz_200MHz_0/clk_40_200/inst/clk_200_out | vga_ctrl_0/counter_v0                         | vga_ctrl_0/counter_v[9]_i_1_n_0                              |                2 |             18 |
-|  clk_40MHz_200MHz_0/clk_40_200/inst/clk_200_out | vga_ctrl_0/addr_sig0                          | vga_ctrl_0/addr_sig_reg[0]                                   |                5 |             36 |
-|  clk_40MHz_200MHz_0/clk_40_200/inst/clk_40_out  |                                               | rgb2dvi_0/DataEncoders[0].DataEncoder/SR[0]                  |                7 |             42 |
-|  clk_40MHz_200MHz_0/clk_40_200/inst/clk_40_out  |                                               |                                                              |               19 |             80 |
-+-------------------------------------------------+-----------------------------------------------+--------------------------------------------------------------+------------------+----------------+
++------------------------------------------------+---------------------------------+------------------------------------------------------------------------------+------------------+----------------+
+|                  Clock Signal                  |          Enable Signal          |                               Set/Reset Signal                               | Slice Load Count | Bel Load Count |
++------------------------------------------------+---------------------------------+------------------------------------------------------------------------------+------------------+----------------+
+|  clk_40MHz_200MHz_0/clk_40_200/inst/clk_40_out |                                 | rgb2dvi_0/ClockGenInternal.ClockGenX/oSyncStages_reg[0]                      |                1 |              4 |
+|  clk_40MHz_200MHz_0/clk_40_200/inst/clk_40_out |                                 | rst_IBUF                                                                     |                1 |              4 |
+|  clk_40MHz_200MHz_0/clk_40_200/inst/clk_40_out |                                 | rgb2dvi_0/ClockGenInternal.ClockGenX/LockLostReset/SyncAsyncx/oSyncStages[1] |                1 |              8 |
+|  clk_40MHz_200MHz_0/clk_40_200/inst/clk_40_out |                                 | rgb2dvi_0/DataEncoders[0].DataEncoder/pDataOutRaw[9]_i_1_n_0                 |                1 |             16 |
+|  clk_40MHz_200MHz_0/clk_40_200/inst/clk_40_out | vga_ctrl_0/counter_h0           | vga_ctrl_0/counter_h[9]_i_1_n_0                                              |                4 |             18 |
+|  clk_40MHz_200MHz_0/clk_40_200/inst/clk_40_out | vga_ctrl_0/counter_v[9]_i_2_n_0 | vga_ctrl_0/counter_v[9]_i_1_n_0                                              |                3 |             20 |
+|  clk_40MHz_200MHz_0/clk_40_200/inst/clk_40_out |                                 | color_8_24_0/color_24[23]_i_1_n_0                                            |                6 |             32 |
+|  clk_40MHz_200MHz_0/clk_40_200/inst/clk_40_out | vga_ctrl_0/addr_sig_reg[17]     | vga_ctrl_0/addr_sig                                                          |                5 |             36 |
+|  clk_40MHz_200MHz_0/clk_40_200/inst/clk_40_out |                                 | rgb2dvi_0/DataEncoders[0].DataEncoder/SR[0]                                  |                9 |             42 |
+|  clk_40MHz_200MHz_0/clk_40_200/inst/clk_40_out |                                 |                                                                              |               75 |            212 |
++------------------------------------------------+---------------------------------+------------------------------------------------------------------------------+------------------+----------------+
 
 

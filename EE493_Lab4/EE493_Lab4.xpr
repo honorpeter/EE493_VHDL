@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="O:/Documents/EE493_VHDL/EE493_Lab4/EE493_Lab4.xpr">
+<Project Version="7" Minor="38" Path="G:/Documents/EE493_VHDL/EE493_Lab4/EE493_Lab4.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="2488ee94aca241d68067079494420888"/>
@@ -33,20 +33,20 @@
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
-    <Option Name="WTXSimLaunchSim" Val="44"/>
+    <Option Name="WTXSimLaunchSim" Val="51"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="21"/>
-    <Option Name="WTModelSimExportSim" Val="21"/>
-    <Option Name="WTQuestaExportSim" Val="21"/>
-    <Option Name="WTIesExportSim" Val="21"/>
-    <Option Name="WTVcsExportSim" Val="21"/>
-    <Option Name="WTRivieraExportSim" Val="21"/>
-    <Option Name="WTActivehdlExportSim" Val="21"/>
+    <Option Name="WTXSimExportSim" Val="23"/>
+    <Option Name="WTModelSimExportSim" Val="23"/>
+    <Option Name="WTQuestaExportSim" Val="23"/>
+    <Option Name="WTIesExportSim" Val="23"/>
+    <Option Name="WTVcsExportSim" Val="23"/>
+    <Option Name="WTRivieraExportSim" Val="23"/>
+    <Option Name="WTActivehdlExportSim" Val="23"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -67,9 +67,6 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="picture.bd" FileRelPathName="ip/picture_blk_mem_gen_0_0/picture_blk_mem_gen_0_0.xci">
-          <Proxy FileSetName="picture_blk_mem_gen_0_0"/>
-        </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/clk_40_200MHz/clk_40_200MHz.bd">
         <FileInfo>
@@ -77,6 +74,9 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="clk_40_200MHz.bd" FileRelPathName="ip/clk_40_200MHz_clk_wiz_0_1/clk_40_200MHz_clk_wiz_0_1.xci">
+          <Proxy FileSetName="clk_40_200MHz_clk_wiz_0_1"/>
+        </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/src/ClockGen.vhd">
         <FileInfo>
@@ -170,17 +170,6 @@
           <Proxy FileSetName="clk_40MHz_clk_wiz_0_0"/>
         </CompFileExtendedInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/bd/clk_200MHz/clk_200MHz.bd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-        <CompFileExtendedInfo CompFileName="clk_200MHz.bd" FileRelPathName="ip/clk_200MHz_clk_wiz_0_0/clk_200MHz_clk_wiz_0_0.xci">
-          <Proxy FileSetName="clk_200MHz_clk_wiz_0_0"/>
-        </CompFileExtendedInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/new/clk_div.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
@@ -263,6 +252,13 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sim_1/new/vga_ctrl_tb.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sim_1/new/image_dvi_tb.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
@@ -277,14 +273,14 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sim_1/new/vga_ctrl_tb.vhd">
+      <File Path="$PSRCDIR/sim_1/new/vga_ctrl.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sim_1/new/vga_ctrl.vhd">
+      <File Path="$PSRCDIR/sim_1/new/clk_custom_tb.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -312,21 +308,15 @@
         <Option Name="ConstrsType" Val="XDC"/>
       </Config>
     </FileSet>
-    <FileSet Name="picture_blk_mem_gen_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/picture_blk_mem_gen_0_0">
-      <Config>
-        <Option Name="TopModule" Val="picture_blk_mem_gen_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="clk_40MHz_clk_wiz_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/clk_40MHz_clk_wiz_0_0">
       <Config>
         <Option Name="TopModule" Val="clk_40MHz_clk_wiz_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="clk_200MHz_clk_wiz_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/clk_200MHz_clk_wiz_0_0">
+    <FileSet Name="clk_40_200MHz_clk_wiz_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/clk_40_200MHz_clk_wiz_0_1">
       <Config>
-        <Option Name="TopModule" Val="clk_200MHz_clk_wiz_0_0"/>
+        <Option Name="TopModule" Val="clk_40_200MHz_clk_wiz_0_1"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -368,15 +358,6 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="picture_blk_mem_gen_0_0_synth_1" Type="Ft3:Synth" SrcSet="picture_blk_mem_gen_0_0" Part="xc7z010clg400-1" ConstrsSet="picture_blk_mem_gen_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/picture_blk_mem_gen_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
     <Run Id="clk_40MHz_clk_wiz_0_0_synth_1" Type="Ft3:Synth" SrcSet="clk_40MHz_clk_wiz_0_0" Part="xc7z010clg400-1" ConstrsSet="clk_40MHz_clk_wiz_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/clk_40MHz_clk_wiz_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
@@ -386,9 +367,11 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="clk_200MHz_clk_wiz_0_0_synth_1" Type="Ft3:Synth" SrcSet="clk_200MHz_clk_wiz_0_0" Part="xc7z010clg400-1" ConstrsSet="clk_200MHz_clk_wiz_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/clk_200MHz_clk_wiz_0_0_synth_1" IncludeInArchive="true">
+    <Run Id="clk_40_200MHz_clk_wiz_0_1_synth_1" Type="Ft3:Synth" SrcSet="clk_40_200MHz_clk_wiz_0_1" Part="xc7z010clg400-1" ConstrsSet="clk_40_200MHz_clk_wiz_0_1" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/clk_40_200MHz_clk_wiz_0_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -412,22 +395,6 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="picture_blk_mem_gen_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="picture_blk_mem_gen_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="picture_blk_mem_gen_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
     <Run Id="clk_40MHz_clk_wiz_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="clk_40MHz_clk_wiz_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="clk_40MHz_clk_wiz_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
@@ -444,9 +411,11 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="clk_200MHz_clk_wiz_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="clk_200MHz_clk_wiz_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="clk_200MHz_clk_wiz_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+    <Run Id="clk_40_200MHz_clk_wiz_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="clk_40_200MHz_clk_wiz_0_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="clk_40_200MHz_clk_wiz_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

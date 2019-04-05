@@ -61,29 +61,102 @@ proc step_failed { step } {
 }
 
 set_msg_config -id {Common 17-41} -limit 10000000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
-start_step write_bitstream
-set ACTIVE_STEP write_bitstream
+start_step init_design
+set ACTIVE_STEP init_design
 set rc [catch {
-  create_msg_db write_bitstream.pb
-  set_param synth.incrementalSynthesisCache C:/Users/Shuyu/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-25432-DESKTOP-L28RN3T/incrSyn
-  open_checkpoint image_dvi_top_routed.dcp
-  set_property webtalk.parent_dir O:/Documents/EE493_VHDL/EE493_Lab4/EE493_Lab4.cache/wt [current_project]
+  create_msg_db init_design.pb
+  set_param xicom.use_bs_reader 1
+  create_project -in_memory -part xc7z010clg400-1
+  set_property design_mode GateLvl [current_fileset]
+  set_param project.singleFileAddWarning.threshold 0
+  set_property webtalk.parent_dir G:/Documents/EE493_VHDL/EE493_Lab4/EE493_Lab4.cache/wt [current_project]
+  set_property parent.project_path G:/Documents/EE493_VHDL/EE493_Lab4/EE493_Lab4.xpr [current_project]
+  set_property ip_output_repo G:/Documents/EE493_VHDL/EE493_Lab4/EE493_Lab4.cache/ip [current_project]
+  set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  catch { write_mem_info -force image_dvi_top.mmi }
-  write_bitstream -force image_dvi_top.bit 
-  catch { write_sysdef -hwdef image_dvi_top.hwdef -bitfile image_dvi_top.bit -meminfo image_dvi_top.mmi -file image_dvi_top.sysdef }
-  catch {write_debug_probes -quiet -force image_dvi_top}
-  catch {file copy -force image_dvi_top.ltx debug_nets.ltx}
-  close_msg_db -file write_bitstream.pb
+  add_files -quiet G:/Documents/EE493_VHDL/EE493_Lab4/EE493_Lab4.runs/synth_1/image_dvi_top.dcp
+  set_msg_config -source 4 -id {BD 41-1661} -limit 0
+  set_param project.isImplRun true
+  add_files G:/Documents/EE493_VHDL/EE493_Lab4/EE493_Lab4.srcs/sources_1/bd/picture/picture.bd
+  add_files G:/Documents/EE493_VHDL/EE493_Lab4/EE493_Lab4.srcs/sources_1/bd/clk_40_200MHz/clk_40_200MHz.bd
+  set_param project.isImplRun false
+  read_xdc G:/Documents/EE493_VHDL/EE493_Lab4/EE493_Lab4.srcs/img_hdmi/new/img_dvi_top.xdc
+  set_param project.isImplRun true
+  link_design -top image_dvi_top -part xc7z010clg400-1
+  set_param project.isImplRun false
+  write_hwdef -force -file image_dvi_top.hwdef
+  close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {
-  step_failed write_bitstream
+  step_failed init_design
   return -code error $RESULT
 } else {
-  end_step write_bitstream
+  end_step init_design
+  unset ACTIVE_STEP 
+}
+
+start_step opt_design
+set ACTIVE_STEP opt_design
+set rc [catch {
+  create_msg_db opt_design.pb
+  opt_design 
+  write_checkpoint -force image_dvi_top_opt.dcp
+  create_report "impl_1_opt_report_drc_0" "report_drc -file image_dvi_top_drc_opted.rpt -pb image_dvi_top_drc_opted.pb -rpx image_dvi_top_drc_opted.rpx"
+  close_msg_db -file opt_design.pb
+} RESULT]
+if {$rc} {
+  step_failed opt_design
+  return -code error $RESULT
+} else {
+  end_step opt_design
+  unset ACTIVE_STEP 
+}
+
+start_step place_design
+set ACTIVE_STEP place_design
+set rc [catch {
+  create_msg_db place_design.pb
+  if { [llength [get_debug_cores -quiet] ] > 0 }  { 
+    implement_debug_core 
+  } 
+  place_design 
+  write_checkpoint -force image_dvi_top_placed.dcp
+  create_report "impl_1_place_report_io_0" "report_io -file image_dvi_top_io_placed.rpt"
+  create_report "impl_1_place_report_utilization_0" "report_utilization -file image_dvi_top_utilization_placed.rpt -pb image_dvi_top_utilization_placed.pb"
+  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file image_dvi_top_control_sets_placed.rpt"
+  close_msg_db -file place_design.pb
+} RESULT]
+if {$rc} {
+  step_failed place_design
+  return -code error $RESULT
+} else {
+  end_step place_design
+  unset ACTIVE_STEP 
+}
+
+start_step route_design
+set ACTIVE_STEP route_design
+set rc [catch {
+  create_msg_db route_design.pb
+  route_design 
+  write_checkpoint -force image_dvi_top_routed.dcp
+  create_report "impl_1_route_report_drc_0" "report_drc -file image_dvi_top_drc_routed.rpt -pb image_dvi_top_drc_routed.pb -rpx image_dvi_top_drc_routed.rpx"
+  create_report "impl_1_route_report_methodology_0" "report_methodology -file image_dvi_top_methodology_drc_routed.rpt -pb image_dvi_top_methodology_drc_routed.pb -rpx image_dvi_top_methodology_drc_routed.rpx"
+  create_report "impl_1_route_report_power_0" "report_power -file image_dvi_top_power_routed.rpt -pb image_dvi_top_power_summary_routed.pb -rpx image_dvi_top_power_routed.rpx"
+  create_report "impl_1_route_report_route_status_0" "report_route_status -file image_dvi_top_route_status.rpt -pb image_dvi_top_route_status.pb"
+  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file image_dvi_top_timing_summary_routed.rpt -pb image_dvi_top_timing_summary_routed.pb -rpx image_dvi_top_timing_summary_routed.rpx -warn_on_violation "
+  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file image_dvi_top_incremental_reuse_routed.rpt"
+  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file image_dvi_top_clock_utilization_routed.rpt"
+  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file image_dvi_top_bus_skew_routed.rpt -pb image_dvi_top_bus_skew_routed.pb -rpx image_dvi_top_bus_skew_routed.rpx"
+  close_msg_db -file route_design.pb
+} RESULT]
+if {$rc} {
+  write_checkpoint -force image_dvi_top_routed_error.dcp
+  step_failed route_design
+  return -code error $RESULT
+} else {
+  end_step route_design
   unset ACTIVE_STEP 
 }
 

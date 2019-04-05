@@ -3,7 +3,8 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL, IEEE.numeric_std.ALL;
 
 entity color_8bit_24bit_800_600 is
-	port( clk, en, VS, vid: in std_logic;
+	port( --clk, en, VS, vid: in std_logic;
+	      en, VS, vid: in std_logic;
 		  hcount: in std_logic_vector(10 downto 0);
 		  vcount: in std_logic_vector(9 downto 0);
 		  color_8: in std_logic_vector(7 downto 0);
@@ -20,11 +21,12 @@ signal addr_sig: std_logic_vector(17 downto 0) := (others => '0');
 constant hlim: unsigned(10 downto 0) := to_unsigned(480, 11);
 constant vlim: unsigned(9 downto 0) := to_unsigned(480, 10);
 begin
-process(clk)
+--process(clk)
+process(en)
 		begin
 		--if inside the image area, increment the address variable
-		if(rising_edge(clk) and en = '1') then
-
+		--if(rising_edge(clk) and en = '1') then
+        if(rising_edge(en)) then
             if (vid = '1' and unsigned(hcount) < hlim and unsigned(vcount) < vlim) then
 
 				addr_sig <= std_logic_vector(unsigned(addr_sig) + 1);

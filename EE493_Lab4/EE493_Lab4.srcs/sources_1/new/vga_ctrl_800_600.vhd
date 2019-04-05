@@ -5,7 +5,8 @@ use IEEE.STD_LOGIC_1164.ALL, IEEE.numeric_std.ALL;
 
 entity vga_ctrl_800_600 is
 
-	port ( clk, en: in std_logic;
+	port ( --clk, en: in std_logic;
+	        en: in std_logic;
 			vid: out std_logic := '0';
 			HS: out std_logic := '1';
 			VS: out std_logic := '1';
@@ -32,11 +33,11 @@ signal counter_h : std_logic_vector(10 downto 0) := (others => '0');
 signal counter_v : std_logic_vector(9 downto 0) := (others => '0');
 begin
 
-process (clk, en)
-
+--process (clk, en)
+process (en)
 	begin
-	if(rising_edge(clk) and en = '1') then
-        
+	--if(rising_edge(clk) and en = '1') then
+    if(rising_edge(en)) then
         --increment the counter if horizontal index is less than 800
 		if(unsigned(counter_h) < hlim) then
 

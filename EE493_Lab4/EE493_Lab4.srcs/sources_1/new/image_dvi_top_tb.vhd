@@ -38,6 +38,7 @@ end image_dvi_top_tb;
 architecture testbench of image_dvi_top_tb is
 component image_dvi_top
 port(clk, rst, aRst_n: in std_logic;
+         Data_24: out std_logic_vector(23 downto 0); 
 		 TMDS_clk_n, TMDS_clk_p:  out std_logic;
 		 TMDS_data_n, TMDS_data_p:  out std_logic_vector(2 downto 0));
 end component;
@@ -46,12 +47,13 @@ signal clk_tb,  TMDS_clk_n_tb, TMDS_clk_p_tb: std_logic;
 signal rst_tb : std_logic := '0';
 signal aRst_n_tb: std_logic := '0';
 signal TMDS_data_n_tb, TMDS_data_p_tb : std_logic_vector(2 downto 0);
-
+signal Data_24_tb : std_logic_vector(23 downto 0);
 
 begin
 DUT: image_dvi_top port map (clk => clk_tb,
                              rst => rst_tb,
                              aRst_n => aRst_n_tb,
+                             Data_24 => Data_24_tb,
                              TMDS_clk_n => TMDS_clk_n_tb,
                              TMDS_clk_p => TMDS_clk_p_tb,
                              TMDS_data_n => TMDS_data_n_tb,
