@@ -2,13 +2,13 @@
 <Root MajorVersion="0" MinorVersion="36">
   <CompositeFile CompositeFileTopName="clk_40MHz" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1554414197"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1554414197"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1554414197"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1554414197"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1554427364"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1554427364"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1554427364"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1554427364"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\clk_40MHz_clk_wiz_0_0\clk_40MHz_clk_wiz_0_0.xci" Type="IP">
-        <Instance HierarchyPath="clk_wiz_0"/>
+        <Instance HierarchyPath="clk_40"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1554351197">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1554433065">
   <File Type="PA-TCL" Name="image_dvi_top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="image_dvi_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="image_dvi_top_reports.tcl"/>
   <File Type="RDS-RDS" Name="image_dvi_top.vds"/>
   <File Type="RDS-UTIL" Name="image_dvi_top_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="image_dvi_top_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="image_dvi_top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="image_dvi_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="image_dvi_top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/picture/picture.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/clk_40_200MHz/clk_40_200MHz.bd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -63,13 +73,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/clk_div.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/color_8bit_24bit.vhd">
+    <File Path="$PSRCDIR/sources_1/new/color_8bit_24bit_800_600.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -83,7 +87,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/vga_ctrl_conditional.vhd">
+    <File Path="$PSRCDIR/sources_1/new/vga_ctrl_800_600.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -96,6 +100,43 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/image_div.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/clk_40MHz/clk_40MHz.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/clk_200MHz/clk_200MHz.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clk_div.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/color_8bit_24bit.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/vga_ctrl_conditional.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -157,4 +198,6 @@
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="picture_blk_mem_gen_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_40MHz_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_200MHz_clk_wiz_0_0"/>
 </GenRun>

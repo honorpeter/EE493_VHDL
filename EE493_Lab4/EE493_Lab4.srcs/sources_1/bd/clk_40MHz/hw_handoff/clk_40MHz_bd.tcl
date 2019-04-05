@@ -157,17 +157,17 @@ proc create_root_design { parentCell } {
   # Create interface ports
 
   # Create ports
-  set clk_in1_0 [ create_bd_port -dir I -type clk clk_in1_0 ]
+  set clk_40_in [ create_bd_port -dir I -type clk clk_40_in ]
   set_property -dict [ list \
    CONFIG.FREQ_HZ {125000000} \
- ] $clk_in1_0
-  set clk_out1_0 [ create_bd_port -dir O -type clk clk_out1_0 ]
+ ] $clk_40_in
+  set clk_40_out [ create_bd_port -dir O -type clk clk_40_out ]
   set_property -dict [ list \
    CONFIG.FREQ_HZ {40000000} \
- ] $clk_out1_0
+ ] $clk_40_out
 
-  # Create instance: clk_wiz_0, and set properties
-  set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0 ]
+  # Create instance: clk_40, and set properties
+  set clk_40 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_40 ]
   set_property -dict [ list \
    CONFIG.CLKOUT1_JITTER {150.675} \
    CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {40.000} \
@@ -175,11 +175,11 @@ proc create_root_design { parentCell } {
    CONFIG.MMCM_DIVCLK_DIVIDE {1} \
    CONFIG.USE_LOCKED {false} \
    CONFIG.USE_RESET {false} \
- ] $clk_wiz_0
+ ] $clk_40
 
   # Create port connections
-  connect_bd_net -net clk_in1_0_1 [get_bd_ports clk_in1_0] [get_bd_pins clk_wiz_0/clk_in1]
-  connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_ports clk_out1_0] [get_bd_pins clk_wiz_0/clk_out1]
+  connect_bd_net -net clk_in1_0_1 [get_bd_ports clk_40_in] [get_bd_pins clk_40/clk_in1]
+  connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_ports clk_40_out] [get_bd_pins clk_40/clk_out1]
 
   # Create address segments
 

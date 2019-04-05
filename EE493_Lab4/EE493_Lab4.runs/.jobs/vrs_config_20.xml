@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="clk_40MHz_clk_wiz_0_0_synth_1" LaunchDir="O:/Documents/EE493_VHDL/EE493_Lab4/EE493_Lab4.runs/clk_40MHz_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

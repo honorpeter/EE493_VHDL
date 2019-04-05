@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0x2554BCB65B73F3C8" bd:device="xc7z010clg400-1" bd:isValidated="true" bd:synthFlowMode="Hierarchical" bd:tool_version="2018.2" bd:top="clk_40MHz" bd:version="1.00.a">
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0x6382F99ED4D6363D" bd:device="xc7z010clg400-1" bd:isValidated="true" bd:synthFlowMode="Hierarchical" bd:tool_version="2018.2" bd:top="clk_40MHz" bd:version="1.00.a">
 
   <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
     <spirit:vendor>xilinx.com</spirit:vendor>
@@ -14,7 +14,7 @@
     </spirit:parameters>
     <spirit:busInterfaces>
       <spirit:busInterface>
-        <spirit:name>CLK.CLK_IN1_0</spirit:name>
+        <spirit:name>CLK.CLK_40_IN</spirit:name>
         <spirit:displayName>Clk</spirit:displayName>
         <spirit:description>Clock</spirit:description>
         <spirit:busType spirit:library="signal" spirit:name="clock" spirit:vendor="xilinx.com" spirit:version="1.0"/>
@@ -26,7 +26,7 @@
               <spirit:name>CLK</spirit:name>
             </spirit:logicalPort>
             <spirit:physicalPort>
-              <spirit:name>clk_in1_0</spirit:name>
+              <spirit:name>clk_40_in</spirit:name>
             </spirit:physicalPort>
           </spirit:portMap>
         </spirit:portMaps>
@@ -61,7 +61,7 @@
         </spirit:parameters>
       </spirit:busInterface>
       <spirit:busInterface>
-        <spirit:name>CLK.CLK_OUT1_0</spirit:name>
+        <spirit:name>CLK.CLK_40_OUT</spirit:name>
         <spirit:displayName>Clk</spirit:displayName>
         <spirit:description>Clock</spirit:description>
         <spirit:busType spirit:library="signal" spirit:name="clock" spirit:vendor="xilinx.com" spirit:version="1.0"/>
@@ -73,7 +73,7 @@
               <spirit:name>CLK</spirit:name>
             </spirit:logicalPort>
             <spirit:physicalPort>
-              <spirit:name>clk_out1_0</spirit:name>
+              <spirit:name>clk_40_out</spirit:name>
             </spirit:physicalPort>
           </spirit:portMap>
         </spirit:portMaps>
@@ -98,7 +98,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>CLK_DOMAIN</spirit:name>
-            <spirit:value>/clk_wiz_0_clk_out1</spirit:value>
+            <spirit:value>/clk_40_clk_out1</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
                 <bd:configElementInfo bd:valueSource="ip_prop"/>
@@ -118,13 +118,13 @@
       </spirit:views>
       <spirit:ports>
         <spirit:port>
-          <spirit:name>clk_in1_0</spirit:name>
+          <spirit:name>clk_40_in</spirit:name>
           <spirit:wire>
             <spirit:direction>in</spirit:direction>
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>clk_out1_0</spirit:name>
+          <spirit:name>clk_40_out</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
           </spirit:wire>
@@ -140,7 +140,7 @@
     <spirit:version>1.00.a</spirit:version>
     <spirit:componentInstances>
       <spirit:componentInstance>
-        <spirit:instanceName>clk_wiz_0</spirit:instanceName>
+        <spirit:instanceName>clk_40</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="clk_wiz" spirit:vendor="xilinx.com" spirit:version="6.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">clk_40MHz_clk_wiz_0_0</spirit:configurableElementValue>
@@ -156,13 +156,13 @@
     <spirit:adHocConnections>
       <spirit:adHocConnection>
         <spirit:name>clk_in1_0_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="clk_in1_0"/>
-        <spirit:internalPortReference spirit:componentRef="clk_wiz_0" spirit:portRef="clk_in1"/>
+        <spirit:externalPortReference spirit:portRef="clk_40_in"/>
+        <spirit:internalPortReference spirit:componentRef="clk_40" spirit:portRef="clk_in1"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>clk_wiz_0_clk_out1</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="clk_wiz_0" spirit:portRef="clk_out1"/>
-        <spirit:externalPortReference spirit:portRef="clk_out1_0"/>
+        <spirit:internalPortReference spirit:componentRef="clk_40" spirit:portRef="clk_out1"/>
+        <spirit:externalPortReference spirit:portRef="clk_40_out"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
   </spirit:design>

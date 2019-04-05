@@ -13,12 +13,27 @@ end image_dvi;
 
 architecture top_arch of image_dvi is
 	--clk_div, picture, vga_ctrl, color_8_24
-component clk_40MHz is 
-	 port (
-    clk_in1_0 : in STD_LOGIC;
-    clk_out1_0 : out STD_LOGIC
-    );
-end component;
+--component clk_40MHz is 
+--	 port (
+--    clk_40_in : in STD_LOGIC;
+--    clk_40_out : out STD_LOGIC
+--    );
+--end component;
+
+--component clk_200MHz is
+--     port (
+--   clk_200_in : in STD_LOGIC;
+--   clk_200_out : out STD_LOGIC
+-- );
+-- end component;
+
+component clk_40_200MHz is
+     port (
+   clk_in : in STD_LOGIC;
+   clk_40_out: out std_logic;
+   clk_200_out : out STD_LOGIC
+ );
+ end component;
 
 component picture is
     port (
@@ -48,7 +63,7 @@ component color_8bit_24bit_800_600 is
 		  addr:  out std_logic_vector(17 downto 0));
 end component;
 
-signal en_sig, vid_sig, VS_sig: std_logic;
+signal clk_fast_sig, en_sig, vid_sig, VS_sig: std_logic;
 signal hcount_sig: std_logic_vector(10 downto 0);
 signal vcount_sig: std_logic_vector(9 downto 0);
 signal pixel_sig: std_logic_vector(7 downto 0);
@@ -57,14 +72,21 @@ signal addr_sig: std_logic_vector(17 downto 0);
 
 begin
 
-clk_40MHz_0: clk_40MHz port map (clk_in1_0  => clk,
-							 clk_out1_0  => en_sig);
+clk_200MHz_0: clk_40_200MHz port map( clk_in => clk,
+                                   clk_40_out => en_sig,
+                                   clk_200_out => clk_fast_sig);
+
+--clk_200MHz_0: clk_200MHz port map( clk_200_in => clk,
+--                                   clk_200_out => clk_fast_sig);
+
+--clk_40MHz_0: clk_40MHz port map (clk_40_in  => clk,
+--							 clk_40_out  => en_sig);
 
 picture_0: picture port map(rom_clk => en_sig,
 							rom_addr => addr_sig,
 							rom_dout => pixel_sig );
 
-vga_ctrl_0: vga_ctrl_800_600 port map(clk => clk,
+vga_ctrl_0: vga_ctrl_800_600 port map(clk => clk_fast_sig,
 							  en => en_sig,
 							  vid => vid_sig,
 							  HS => vga_hs,
@@ -72,7 +94,7 @@ vga_ctrl_0: vga_ctrl_800_600 port map(clk => clk,
 							  hcount => hcount_sig,
 							  vcount => vcount_sig);
 
-color_8_24_0: color_8bit_24bit_800_600 port map(clk => clk,
+color_8_24_0: color_8bit_24bit_800_600 port map(clk => clk_fast_sig,
 									  en => en_sig,
 									  vid => vid_sig,
 									  VS => VS_sig,

@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="G:/Documents/EE493_VHDL/EE493_Lab4/EE493_Lab4.xpr">
+<Project Version="7" Minor="38" Path="O:/Documents/EE493_VHDL/EE493_Lab4/EE493_Lab4.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="2488ee94aca241d68067079494420888"/>
@@ -33,20 +33,20 @@
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
-    <Option Name="WTXSimLaunchSim" Val="36"/>
+    <Option Name="WTXSimLaunchSim" Val="44"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="11"/>
-    <Option Name="WTModelSimExportSim" Val="11"/>
-    <Option Name="WTQuestaExportSim" Val="11"/>
-    <Option Name="WTIesExportSim" Val="11"/>
-    <Option Name="WTVcsExportSim" Val="11"/>
-    <Option Name="WTRivieraExportSim" Val="11"/>
-    <Option Name="WTActivehdlExportSim" Val="11"/>
+    <Option Name="WTXSimExportSim" Val="21"/>
+    <Option Name="WTModelSimExportSim" Val="21"/>
+    <Option Name="WTQuestaExportSim" Val="21"/>
+    <Option Name="WTIesExportSim" Val="21"/>
+    <Option Name="WTVcsExportSim" Val="21"/>
+    <Option Name="WTRivieraExportSim" Val="21"/>
+    <Option Name="WTActivehdlExportSim" Val="21"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -71,18 +71,71 @@
           <Proxy FileSetName="picture_blk_mem_gen_0_0"/>
         </CompFileExtendedInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/bd/clk_40MHz/clk_40MHz.bd">
+      <File Path="$PSRCDIR/sources_1/bd/clk_40_200MHz/clk_40_200MHz.bd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="clk_40MHz.bd" FileRelPathName="ip/clk_40MHz_clk_wiz_0_0/clk_40MHz_clk_wiz_0_0.xci">
-          <Proxy FileSetName="clk_40MHz_clk_wiz_0_0"/>
-        </CompFileExtendedInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/src/ClockGen.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="F:/Digilent_Demos/rgb2dvi/src/ClockGen.vhd"/>
+          <Attr Name="ImportTime" Val="1504724354"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/src/DVI_Constants.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="F:/Digilent_Demos/rgb2dvi/src/DVI_Constants.vhd"/>
+          <Attr Name="ImportTime" Val="1504724354"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/src/OutputSERDES.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="F:/Digilent_Demos/rgb2dvi/src/OutputSERDES.vhd"/>
+          <Attr Name="ImportTime" Val="1504724354"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/src/SyncAsync.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="F:/Digilent_Demos/rgb2dvi/src/SyncAsync.vhd"/>
+          <Attr Name="ImportTime" Val="1504724354"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/src/SyncAsyncReset.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="F:/Digilent_Demos/rgb2dvi/src/SyncAsyncReset.vhd"/>
+          <Attr Name="ImportTime" Val="1504724354"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/src/TMDS_Encoder.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="F:/Digilent_Demos/rgb2dvi/src/TMDS_Encoder.vhd"/>
+          <Attr Name="ImportTime" Val="1504724354"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/color_8bit_24bit_800_600.vhd">
         <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/src/rgb2dvi.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="F:/Digilent_Demos/rgb2dvi/src/rgb2dvi.vhd"/>
+          <Attr Name="ImportTime" Val="1504724354"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -93,69 +146,44 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/image_div.vhd">
+      <File Path="$PSRCDIR/sources_1/new/image_dvi_top.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/image_div.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/clk_40MHz/clk_40MHz.bd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+        <CompFileExtendedInfo CompFileName="clk_40MHz.bd" FileRelPathName="ip/clk_40MHz_clk_wiz_0_0/clk_40MHz_clk_wiz_0_0.xci">
+          <Proxy FileSetName="clk_40MHz_clk_wiz_0_0"/>
+        </CompFileExtendedInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/clk_200MHz/clk_200MHz.bd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+        <CompFileExtendedInfo CompFileName="clk_200MHz.bd" FileRelPathName="ip/clk_200MHz_clk_wiz_0_0/clk_200MHz_clk_wiz_0_0.xci">
+          <Proxy FileSetName="clk_200MHz_clk_wiz_0_0"/>
+        </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/clk_div.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/src/ClockGen.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="F:/Digilent_Demos/rgb2dvi/src/ClockGen.vhd"/>
-          <Attr Name="ImportTime" Val="1504724354"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/src/DVI_Constants.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="F:/Digilent_Demos/rgb2dvi/src/DVI_Constants.vhd"/>
-          <Attr Name="ImportTime" Val="1504724354"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/src/OutputSERDES.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="F:/Digilent_Demos/rgb2dvi/src/OutputSERDES.vhd"/>
-          <Attr Name="ImportTime" Val="1504724354"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/src/SyncAsync.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="F:/Digilent_Demos/rgb2dvi/src/SyncAsync.vhd"/>
-          <Attr Name="ImportTime" Val="1504724354"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/src/SyncAsyncReset.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="F:/Digilent_Demos/rgb2dvi/src/SyncAsyncReset.vhd"/>
-          <Attr Name="ImportTime" Val="1504724354"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/src/TMDS_Encoder.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="F:/Digilent_Demos/rgb2dvi/src/TMDS_Encoder.vhd"/>
-          <Attr Name="ImportTime" Val="1504724354"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -167,23 +195,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/src/rgb2dvi.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="F:/Digilent_Demos/rgb2dvi/src/rgb2dvi.vhd"/>
-          <Attr Name="ImportTime" Val="1504724354"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/new/vga_ctrl_conditional.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/image_dvi_top.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -226,7 +238,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="image_dvi"/>
+        <Option Name="TopModule" Val="image_dvi_top"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -245,13 +257,13 @@
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sim_1/new/image_dvi_tb.vhd">
+      <File Path="$PSRCDIR/sources_1/new/image_dvi_top_tb.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/image_dvi_top_tb.vhd">
+      <File Path="$PSRCDIR/sim_1/new/image_dvi_tb.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -281,7 +293,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="image_dvi_tb"/>
+        <Option Name="TopModule" Val="image_dvi_top_tb"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
@@ -309,6 +321,12 @@
     <FileSet Name="clk_40MHz_clk_wiz_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/clk_40MHz_clk_wiz_0_0">
       <Config>
         <Option Name="TopModule" Val="clk_40MHz_clk_wiz_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="clk_200MHz_clk_wiz_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/clk_200MHz_clk_wiz_0_0">
+      <Config>
+        <Option Name="TopModule" Val="clk_200MHz_clk_wiz_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -361,9 +379,16 @@
     </Run>
     <Run Id="clk_40MHz_clk_wiz_0_0_synth_1" Type="Ft3:Synth" SrcSet="clk_40MHz_clk_wiz_0_0" Part="xc7z010clg400-1" ConstrsSet="clk_40MHz_clk_wiz_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/clk_40MHz_clk_wiz_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="clk_200MHz_clk_wiz_0_0_synth_1" Type="Ft3:Synth" SrcSet="clk_200MHz_clk_wiz_0_0" Part="xc7z010clg400-1" ConstrsSet="clk_200MHz_clk_wiz_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/clk_200MHz_clk_wiz_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -405,9 +430,23 @@
     </Run>
     <Run Id="clk_40MHz_clk_wiz_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="clk_40MHz_clk_wiz_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="clk_40MHz_clk_wiz_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="clk_200MHz_clk_wiz_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="clk_200MHz_clk_wiz_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="clk_200MHz_clk_wiz_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

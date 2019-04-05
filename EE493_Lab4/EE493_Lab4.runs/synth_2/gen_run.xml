@@ -4,8 +4,6 @@
   <File Type="REPORTS-TCL" Name="image_dvi_top_reports.tcl"/>
   <File Type="RDS-RDS" Name="image_dvi_top.vds"/>
   <File Type="RDS-DCP" Name="image_dvi_top.dcp"/>
-  <File Type="RDS-UTIL" Name="image_dvi_top_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="image_dvi_top_utilization_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/picture/picture.bd">

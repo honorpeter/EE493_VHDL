@@ -1,30 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1554351277">
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1554433215">
   <File Type="BITSTR-BMM" Name="image_dvi_top_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="image_dvi_top_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="image_dvi_top_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR" Name="image_dvi_top_power_routed.rpt"/>
   <File Type="PA-TCL" Name="image_dvi_top.tcl"/>
+  <File Type="OPT-TIMING" Name="image_dvi_top_timing_summary_opted.rpt"/>
   <File Type="OPT-DCP" Name="image_dvi_top_opt.dcp"/>
   <File Type="ROUTE-PWR-SUM" Name="image_dvi_top_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="image_dvi_top_reports.tcl"/>
   <File Type="OPT-DRC" Name="image_dvi_top_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="image_dvi_top.hwdef"/>
   <File Type="PWROPT-DCP" Name="image_dvi_top_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="image_dvi_top_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="image_dvi_top_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="image_dvi_top_placed.dcp"/>
   <File Type="PLACE-IO" Name="image_dvi_top_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="image_dvi_top_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="image_dvi_top_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="image_dvi_top_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="image_dvi_top_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="image_dvi_top_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="image_dvi_top_incremental_reuse_pre_placed.rpt"/>
   <File Type="BG-BGN" Name="image_dvi_top.bgn"/>
+  <File Type="PLACE-TIMING" Name="image_dvi_top_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="image_dvi_top_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="image_dvi_top.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="image_dvi_top_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="image_dvi_top_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="image_dvi_top_drc_physopted.rpt"/>
   <File Type="BITSTR-MSK" Name="image_dvi_top.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="image_dvi_top_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="image_dvi_top_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="image_dvi_top_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="image_dvi_top_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="image_dvi_top_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="image_dvi_top_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="image_dvi_top.ltx"/>
   <File Type="ROUTE-DRC-RPX" Name="image_dvi_top_drc_routed.rpx"/>
   <File Type="BITSTR-MMI" Name="image_dvi_top.mmi"/>
@@ -38,21 +50,35 @@
   <File Type="ROUTE-TIMINGSUMMARY" Name="image_dvi_top_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="image_dvi_top_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="image_dvi_top_timing_summary_routed.rpx"/>
-  <File Type="RDI-RDI" Name="image_dvi_top.vdi"/>
+  <File Type="ROUTE-SIMILARITY" Name="image_dvi_top_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="image_dvi_top_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="image_dvi_top_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="image_dvi_top_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="image_dvi_top_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="image_dvi_top_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="image_dvi_top_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="image_dvi_top_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="image_dvi_top_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="image_dvi_top_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="image_dvi_top_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="image_dvi_top_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="image_dvi_top.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="image_dvi_top_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="image_dvi_top.rbt"/>
   <File Type="BITSTR-NKY" Name="image_dvi_top.nky"/>
   <File Type="BG-DRC" Name="image_dvi_top.drc"/>
+  <File Type="RDI-RDI" Name="image_dvi_top.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/picture/picture.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/clk_40_200MHz/clk_40_200MHz.bd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -107,13 +133,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/clk_div.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/color_8bit_24bit.vhd">
+    <File Path="$PSRCDIR/sources_1/new/color_8bit_24bit_800_600.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -127,7 +147,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/vga_ctrl_conditional.vhd">
+    <File Path="$PSRCDIR/sources_1/new/vga_ctrl_800_600.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -140,6 +160,43 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/image_div.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/clk_40MHz/clk_40MHz.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/clk_200MHz/clk_200MHz.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clk_div.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/color_8bit_24bit.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/vga_ctrl_conditional.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -209,4 +266,6 @@
     <Step Id="write_bitstream"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="picture_blk_mem_gen_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_40MHz_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_200MHz_clk_wiz_0_0"/>
 </GenRun>
