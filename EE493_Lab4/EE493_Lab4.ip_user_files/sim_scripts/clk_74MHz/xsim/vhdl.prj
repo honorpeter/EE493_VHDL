@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../bd/clk_74MHz/ip/clk_74MHz_clk_wiz_0_0/clk_74MHz_clk_wiz_0_0_sim_netlist.vhdl" \
+"../../../bd/clk_74MHz/sim/clk_74MHz.vhd" \
+
+nosort

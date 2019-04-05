@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-// Date        : Fri Apr  5 00:04:07 2019
-// Host        : MSI running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               G:/Documents/EE493_VHDL/EE493_Lab4/EE493_Lab4.srcs/sources_1/bd/clk_40_200MHz/ip/clk_40_200MHz_clk_wiz_0_1/clk_40_200MHz_clk_wiz_0_1_stub.v
+// Date        : Thu Apr  4 22:18:58 2019
+// Host        : DESKTOP-L28RN3T running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode synth_stub -rename_top clk_40_200MHz_clk_wiz_0_1 -prefix
+//               clk_40_200MHz_clk_wiz_0_1_ clk_40_200MHz_clk_wiz_0_1_stub.v
 // Design      : clk_40_200MHz_clk_wiz_0_1
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z010clg400-1

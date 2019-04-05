@@ -17,11 +17,12 @@ architecture Behavioral of vga_ctrl is
 --constant hlim : integer := 800;
 --constant vlim: integer := 525;
 --VGA size is 800*525
+--constant hlim : unsigned := to_unsigned(800, 10);
 constant hlim : unsigned := to_unsigned(799, 10);
 constant vlim: unsigned := to_unsigned(524, 10);
 --display size is 640*480
-constant hlim_disp : unsigned := to_unsigned(640, 10);
-constant vlim_disp: unsigned := to_unsigned(480, 10);
+constant hlim_disp : unsigned := to_unsigned(639, 10);
+constant vlim_disp: unsigned := to_unsigned(479, 10);
 --Sync area is [656, 751] and [490, 491], respectively
 type sync_lim is array (0 to 1) of unsigned(9 downto 0);
 constant hsync_lim: sync_lim := (to_unsigned(655, 10), to_unsigned(751, 10));
@@ -42,7 +43,7 @@ process (clk, en)
 			counter_h <= std_logic_vector(unsigned(counter_h) + 1);
 			
 			--assert vid to 1 if horizontal index is less than 640
-			if(unsigned(counter_h) < hlim_disp and unsigned(counter_v) < vlim_disp) then
+			if(unsigned(counter_h) < hlim_disp and unsigned(counter_v) <= vlim_disp) then
 			     
 			     vid <= '1';
 			else
@@ -61,6 +62,8 @@ process (clk, en)
 		elsif(unsigned(counter_h) = hlim) then
 
 			counter_h <= (others => '0');
+
+			--asert vid to 1 if vertical index is less than 480
 			
 			
 			if(unsigned(counter_v) < vlim) then
@@ -73,9 +76,16 @@ process (clk, en)
                 else
                      VS <= '1';
                 end if;
-			
+			    
+			    if(unsigned(counter_v) < vlim_disp) then
+                
+                    vid <= '1';
+                else
+                    vid <= '0';
+                end if;
+			    
 			elsif(unsigned(counter_v) = vlim) then
-
+                vid <= '1';
 				counter_v <= (others => '0');
 
 			end if;
@@ -86,6 +96,7 @@ process (clk, en)
 
 	end process;
 			
+--vid <= vid_sig;			
 hcount <= counter_h;
 vcount <= counter_v;
 

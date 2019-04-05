@@ -1,6 +1,6 @@
-xpm_cdc.sv,systemverilog,xil_defaultlib,F:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,incdir="../../../../EE493_Lab4.srcs/sources_1/bd/clk_40_200MHz/ipshared/b65a"
-xpm_memory.sv,systemverilog,xil_defaultlib,F:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,incdir="../../../../EE493_Lab4.srcs/sources_1/bd/clk_40_200MHz/ipshared/b65a"
-xpm_VCOMP.vhd,vhdl,xpm,F:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_VCOMP.vhd,incdir="../../../../EE493_Lab4.srcs/sources_1/bd/clk_40_200MHz/ipshared/b65a"
-clk_40_200MHz_clk_wiz_0_1_sim_netlist.vhdl,vhdl,xil_defaultlib,g:/Documents/EE493_VHDL/EE493_Lab4/EE493_Lab4.srcs/sources_1/bd/clk_40_200MHz/ip/clk_40_200MHz_clk_wiz_0_1/clk_40_200MHz_clk_wiz_0_1_sim_netlist.vhdl,incdir="../../../../EE493_Lab4.srcs/sources_1/bd/clk_40_200MHz/ipshared/b65a"
+xpm_cdc.sv,systemverilog,xil_defaultlib,O:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,incdir="../../../../EE493_Lab4.srcs/sources_1/bd/clk_40_200MHz/ipshared/b65a"
+xpm_memory.sv,systemverilog,xil_defaultlib,O:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,incdir="../../../../EE493_Lab4.srcs/sources_1/bd/clk_40_200MHz/ipshared/b65a"
+xpm_VCOMP.vhd,vhdl,xpm,O:/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_VCOMP.vhd,incdir="../../../../EE493_Lab4.srcs/sources_1/bd/clk_40_200MHz/ipshared/b65a"
+clk_40_200MHz_clk_wiz_0_1_sim_netlist.vhdl,vhdl,xil_defaultlib,../../../bd/clk_40_200MHz/ip/clk_40_200MHz_clk_wiz_0_1/clk_40_200MHz_clk_wiz_0_1_sim_netlist.vhdl,incdir="../../../../EE493_Lab4.srcs/sources_1/bd/clk_40_200MHz/ipshared/b65a"
 clk_40_200MHz.vhd,vhdl,xil_defaultlib,../../../bd/clk_40_200MHz/sim/clk_40_200MHz.vhd,incdir="../../../../EE493_Lab4.srcs/sources_1/bd/clk_40_200MHz/ipshared/b65a"
 glbl.v,Verilog,xil_defaultlib,glbl.v

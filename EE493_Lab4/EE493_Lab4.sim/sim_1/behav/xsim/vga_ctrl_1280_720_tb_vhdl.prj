@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../EE493_Lab4.srcs/sources_1/new/vga_ctrl_1280_720.vhd" \
+"../../../../EE493_Lab4.srcs/sim_1/new/vga_ctrl_1280_720_tb.vhd" \
+
+# Do not sort compile order
+nosort

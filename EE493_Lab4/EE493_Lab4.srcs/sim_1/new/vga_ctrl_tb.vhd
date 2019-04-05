@@ -13,7 +13,7 @@ component vga_ctrl is
 			vcount: out std_logic_vector(9 downto 0));
 end component;
 signal clk_tb : std_logic := '0';
-signal en_tb: std_logic := '1';
+signal en_tb: std_logic := '0';
 signal vid_tb: std_logic := '0';
 signal HS_tb: std_logic := '0';
 signal VS_tb: std_logic := '0';
@@ -28,7 +28,13 @@ clk_gen_proc: process
     wait for 4 ns; clk_tb <= '0';
 end process clk_gen_proc;
 
-
+--simulate the divided by 5 clock
+clk_div_gen_proc: process
+    begin
+    en_tb <= '1'; wait for 4 ns;
+    en_tb <= '0'; wait for 16 ns;
+    
+end process clk_div_gen_proc;
 
     dut: vga_ctrl
     port map( clk => clk_tb,

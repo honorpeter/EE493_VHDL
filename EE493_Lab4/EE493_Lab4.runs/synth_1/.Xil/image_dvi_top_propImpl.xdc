@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:G:/Documents/EE493_VHDL/EE493_Lab4/EE493_Lab4.srcs/img_hdmi/new/img_dvi_top.xdc rfile:../../../EE493_Lab4.srcs/img_hdmi/new/img_dvi_top.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:O:/Documents/EE493_VHDL/EE493_Lab4/EE493_Lab4.srcs/img_hdmi/new/img_dvi_top.xdc rfile:../../../EE493_Lab4.srcs/img_hdmi/new/img_dvi_top.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN K17   IOSTANDARD LVCMOS33 } [get_ports { clk }]; #IO_L12P_T1_MRCC_35 Sch=sysclk
 set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]

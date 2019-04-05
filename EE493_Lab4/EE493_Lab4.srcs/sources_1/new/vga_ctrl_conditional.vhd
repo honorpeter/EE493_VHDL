@@ -3,16 +3,16 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL, IEEE.numeric_std.ALL;
 
 --With Clock Signal, control which pixel the VGA is reading
-entity vga_ctrl is
+entity vga_ctrl_conditional is
 	port ( clk, en: in std_logic;
 			vid: out std_logic := '0';
 			HS: out std_logic := '1';
 			VS: out std_logic := '1';
 			hcount: out std_logic_vector(9 downto 0) := (others => '0');
 			vcount: out std_logic_vector(9 downto 0) := (others => '0'));
-end vga_ctrl;
+end vga_ctrl_conditional;
 
-architecture Behavioral of vga_ctrl is
+architecture Behavioral of vga_ctrl_conditional is
 
 --constant hlim : integer := 800;
 --constant vlim: integer := 525;
