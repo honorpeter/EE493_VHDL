@@ -4,6 +4,8 @@
   <File Type="REPORTS-TCL" Name="image_dvi_top_reports.tcl"/>
   <File Type="RDS-RDS" Name="image_dvi_top.vds"/>
   <File Type="RDS-DCP" Name="image_dvi_top.dcp"/>
+  <File Type="RDS-UTIL" Name="image_dvi_top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="image_dvi_top_utilization_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/picture/picture.bd">
@@ -121,8 +123,10 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/EE493_Lab4_MATLAB/Huangshan_entire.coe">
+    <File Path="$PSRCDIR/sources_1/imports/EE493_Lab4_MATLAB/Huangshan_entire.coe">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/EE493_Lab4_MATLAB/Huangshan_entire.coe"/>
+        <Attr Name="ImportTime" Val="1553820076"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>

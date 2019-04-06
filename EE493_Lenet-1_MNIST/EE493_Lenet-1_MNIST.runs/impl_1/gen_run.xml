@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1554529634">
+  <File Type="BITSTR-BMM" Name="image_dvi_top_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="image_dvi_top_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="image_dvi_top_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="image_dvi_top_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="image_dvi_top.tcl"/>
+  <File Type="OPT-TIMING" Name="image_dvi_top_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="image_dvi_top_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="image_dvi_top_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="image_dvi_top_reports.tcl"/>
+  <File Type="OPT-DRC" Name="image_dvi_top_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="image_dvi_top.hwdef"/>
+  <File Type="PWROPT-DCP" Name="image_dvi_top_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="image_dvi_top_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="image_dvi_top_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="image_dvi_top_placed.dcp"/>
+  <File Type="PLACE-IO" Name="image_dvi_top_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="image_dvi_top_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="image_dvi_top_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="image_dvi_top_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="image_dvi_top_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="image_dvi_top_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="image_dvi_top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="image_dvi_top.bgn"/>
+  <File Type="PLACE-TIMING" Name="image_dvi_top_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="image_dvi_top_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="image_dvi_top.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="image_dvi_top_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="image_dvi_top_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="image_dvi_top_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="image_dvi_top.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="image_dvi_top_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="image_dvi_top_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="image_dvi_top_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="image_dvi_top_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="image_dvi_top_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="image_dvi_top_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="image_dvi_top.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="image_dvi_top_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="image_dvi_top.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="image_dvi_top_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="image_dvi_top_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="image_dvi_top.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="image_dvi_top_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="image_dvi_top_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="image_dvi_top_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="image_dvi_top_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="image_dvi_top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="image_dvi_top_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="image_dvi_top_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="image_dvi_top_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="image_dvi_top_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="image_dvi_top_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="image_dvi_top_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="image_dvi_top_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="image_dvi_top_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="image_dvi_top_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="image_dvi_top_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="image_dvi_top_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="image_dvi_top_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="image_dvi_top_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="image_dvi_top_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="image_dvi_top.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="image_dvi_top_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="image_dvi_top.rbt"/>
+  <File Type="BITSTR-NKY" Name="image_dvi_top.nky"/>
+  <File Type="BG-DRC" Name="image_dvi_top.drc"/>
+  <File Type="RDI-RDI" Name="image_dvi_top.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/picture/picture.bd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../EE493_Lab4/EE493_Lab4.srcs/sources_1/bd/picture/picture.bd"/>
+        <Attr Name="ImportTime" Val="1554408792"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/clk_148MHz/clk_148MHz.bd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../EE493_Lab4/EE493_Lab4.srcs/sources_1/bd/clk_148MHz/clk_148MHz.bd"/>
+        <Attr Name="ImportTime" Val="1554527913"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/ClockGen.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="F:/Digilent_Demos/rgb2dvi/src/ClockGen.vhd"/>
+        <Attr Name="ImportTime" Val="1504724354"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/DVI_Constants.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="F:/Digilent_Demos/rgb2dvi/src/DVI_Constants.vhd"/>
+        <Attr Name="ImportTime" Val="1504724354"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/OutputSERDES.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="F:/Digilent_Demos/rgb2dvi/src/OutputSERDES.vhd"/>
+        <Attr Name="ImportTime" Val="1504724354"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/SyncAsync.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="F:/Digilent_Demos/rgb2dvi/src/SyncAsync.vhd"/>
+        <Attr Name="ImportTime" Val="1504724354"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/SyncAsyncReset.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="F:/Digilent_Demos/rgb2dvi/src/SyncAsyncReset.vhd"/>
+        <Attr Name="ImportTime" Val="1504724354"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/TMDS_Encoder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="F:/Digilent_Demos/rgb2dvi/src/TMDS_Encoder.vhd"/>
+        <Attr Name="ImportTime" Val="1504724354"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/color_8bit_24bit_1920_1080.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../EE493_Lab4/EE493_Lab4.srcs/sources_1/new/color_8bit_24bit_1920_1080.vhd"/>
+        <Attr Name="ImportTime" Val="1554522152"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/rgb2dvi.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="F:/Digilent_Demos/rgb2dvi/src/rgb2dvi.vhd"/>
+        <Attr Name="ImportTime" Val="1504724354"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/vga_ctrl_1920_1080.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../EE493_Lab4/EE493_Lab4.srcs/sources_1/new/vga_ctrl_1920_1080.vhd"/>
+        <Attr Name="ImportTime" Val="1554522152"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/image_dvi_top.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../EE493_Lab4/EE493_Lab4.srcs/sources_1/new/image_dvi_top.vhd"/>
+        <Attr Name="ImportTime" Val="1554522152"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/clk_74MHz/clk_74MHz.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../EE493_Lab4/EE493_Lab4.srcs/sources_1/bd/clk_74MHz/clk_74MHz.bd"/>
+        <Attr Name="ImportTime" Val="1554522152"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/color_8bit_24bit_1280_720.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../EE493_Lab4/EE493_Lab4.srcs/sources_1/new/color_8bit_24bit_1280_720.vhd"/>
+        <Attr Name="ImportTime" Val="1554522152"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/vga_ctrl_1280_720.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../EE493_Lab4/EE493_Lab4.srcs/sources_1/new/vga_ctrl_1280_720.vhd"/>
+        <Attr Name="ImportTime" Val="1554522152"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/clk_40_200MHz/clk_40_200MHz.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../EE493_Lab4/EE493_Lab4.srcs/sources_1/bd/clk_40_200MHz/clk_40_200MHz.bd"/>
+        <Attr Name="ImportTime" Val="1554436987"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/color_8bit_24bit_800_600.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../EE493_Lab4/EE493_Lab4.srcs/sources_1/new/color_8bit_24bit_800_600.vhd"/>
+        <Attr Name="ImportTime" Val="1554440177"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/vga_ctrl_800_600.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../EE493_Lab4/EE493_Lab4.srcs/sources_1/new/vga_ctrl_800_600.vhd"/>
+        <Attr Name="ImportTime" Val="1554440105"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/image_div.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../EE493_Lab4/EE493_Lab4.srcs/sources_1/new/image_div.vhd"/>
+        <Attr Name="ImportTime" Val="1554436142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/clk_40MHz/clk_40MHz.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../EE493_Lab4/EE493_Lab4.srcs/sources_1/bd/clk_40MHz/clk_40MHz.bd"/>
+        <Attr Name="ImportTime" Val="1554436142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clk_div.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../EE493_Lab4/EE493_Lab4.srcs/sources_1/new/clk_div.vhd"/>
+        <Attr Name="ImportTime" Val="1554010537"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/color_8bit_24bit.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../EE493_Lab4/EE493_Lab4.srcs/sources_1/new/color_8bit_24bit.vhd"/>
+        <Attr Name="ImportTime" Val="1554265430"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/vga_ctrl_conditional.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../EE493_Lab4/EE493_Lab4.srcs/sources_1/new/vga_ctrl_conditional.vhd"/>
+        <Attr Name="ImportTime" Val="1554522152"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pixel_pusher.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../EE493_Lab4/EE493_Lab4.srcs/sources_1/new/pixel_pusher.vhd"/>
+        <Attr Name="ImportTime" Val="1554010239"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/vga_ctrl.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../EE493_Lab4/EE493_Lab4.srcs/sources_1/new/vga_ctrl.vhd"/>
+        <Attr Name="ImportTime" Val="1554522152"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/image_top.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../EE493_Lab4/EE493_Lab4.srcs/sources_1/new/image_top.vhd"/>
+        <Attr Name="ImportTime" Val="1554067538"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EE493_Lab4_MATLAB/Huangshan_entire.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../EE493_Lab4/EE493_Lab4_MATLAB/Huangshan_entire.coe"/>
+        <Attr Name="ImportTime" Val="1553820076"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/img_dvi.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../EE493_Lab4/EE493_Lab4.srcs/sources_1/new/img_dvi.vhd"/>
+        <Attr Name="ImportTime" Val="1554264977"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/clk_106MHz/clk_106MHz.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../EE493_Lab4/EE493_Lab4.srcs/sources_1/bd/clk_106MHz/clk_106MHz.bd"/>
+        <Attr Name="ImportTime" Val="1554522151"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="image_dvi_top"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/img_hdmi">
+    <File Path="$PSRCDIR/img_hdmi/new/img_dvi_top.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../EE493_Lab4/EE493_Lab4.srcs/img_hdmi/new/img_dvi_top.xdc"/>
+        <Attr Name="ImportTime" Val="1554408792"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="clk_40MHz_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_148MHz_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="picture_blk_mem_gen_0_0"/>
+</GenRun>

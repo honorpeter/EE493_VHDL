@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1554500544">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1554529633">
   <File Type="PA-TCL" Name="image_dvi_top.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="image_dvi_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="image_dvi_top_reports.tcl"/>
@@ -200,8 +200,10 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/EE493_Lab4_MATLAB/Huangshan_entire.coe">
+    <File Path="$PSRCDIR/sources_1/imports/EE493_Lab4_MATLAB/Huangshan_entire.coe">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/EE493_Lab4_MATLAB/Huangshan_entire.coe"/>
+        <Attr Name="ImportTime" Val="1553820076"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -210,6 +212,14 @@
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/clk_106MHz/clk_106MHz.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
@@ -234,6 +244,6 @@
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="clk_40MHz_clk_wiz_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="clk_74MHz_clk_wiz_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="clk_148MHz_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="picture_blk_mem_gen_0_0"/>
 </GenRun>
