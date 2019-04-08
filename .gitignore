@@ -23,6 +23,7 @@
 !*.coe
 !*.jpg
 !*.bit
+!board_files/*
 #########
 #IP files
 #########

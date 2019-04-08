@@ -1,0 +1,12 @@
+vhdl xil_defaultlib  \
+"g:/Documents/EE493_VHDL/EE493_Lenet-1_MNIST/EE493_Lenet-1_MNIST.srcs/sources_1/bd/zybo_z7_10_ps/ip/zybo_z7_10_ps_processing_system7_0_0/zybo_z7_10_ps_processing_system7_0_0_sim_netlist.vhdl" \
+"../../../bd/zybo_z7_10_ps/ip/zybo_z7_10_ps_axi_gpio_0_0/sim/zybo_z7_10_ps_axi_gpio_0_0.vhd" \
+"g:/Documents/EE493_VHDL/EE493_Lenet-1_MNIST/EE493_Lenet-1_MNIST.srcs/sources_1/bd/zybo_z7_10_ps/ip/zybo_z7_10_ps_axi_bram_ctrl_0_0/zybo_z7_10_ps_axi_bram_ctrl_0_0_sim_netlist.vhdl" \
+"g:/Documents/EE493_VHDL/EE493_Lenet-1_MNIST/EE493_Lenet-1_MNIST.srcs/sources_1/bd/zybo_z7_10_ps/ip/zybo_z7_10_ps_blk_mem_gen_0_0/zybo_z7_10_ps_blk_mem_gen_0_0_sim_netlist.vhdl" \
+"../../../bd/zybo_z7_10_ps/ip/zybo_z7_10_ps_rst_ps7_0_100M_0/sim/zybo_z7_10_ps_rst_ps7_0_100M_0.vhd" \
+"g:/Documents/EE493_VHDL/EE493_Lenet-1_MNIST/EE493_Lenet-1_MNIST.srcs/sources_1/bd/zybo_z7_10_ps/ip/zybo_z7_10_ps_xbar_0/zybo_z7_10_ps_xbar_0_sim_netlist.vhdl" \
+"../../../bd/zybo_z7_10_ps/sim/zybo_z7_10_ps.vhd" \
+"g:/Documents/EE493_VHDL/EE493_Lenet-1_MNIST/EE493_Lenet-1_MNIST.srcs/sources_1/bd/zybo_z7_10_ps/ip/zybo_z7_10_ps_auto_pc_0/zybo_z7_10_ps_auto_pc_0_sim_netlist.vhdl" \
+"g:/Documents/EE493_VHDL/EE493_Lenet-1_MNIST/EE493_Lenet-1_MNIST.srcs/sources_1/bd/zybo_z7_10_ps/ip/zybo_z7_10_ps_auto_pc_1/zybo_z7_10_ps_auto_pc_1_sim_netlist.vhdl" \
+
+nosort

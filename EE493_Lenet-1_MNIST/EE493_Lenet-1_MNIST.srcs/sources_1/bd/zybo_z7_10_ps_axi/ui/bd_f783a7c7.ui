@@ -1,0 +1,21 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y -450 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y -430 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 4 -y -10 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 2 -y 110 -defaultsOSRD
+preplace inst axi_traffic_gen_0 -pg 1 -lvl 3 -y -130 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y -370 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 1 4 NJ -450 NJ -450 NJ -450 NJ
+preplace netloc axi_traffic_gen_0_M_AXIS_MASTER 1 3 1 920
+preplace netloc axi_dma_0_s2mm_introut 1 0 5 -90J -510 NJ -510 NJ -510 NJ -510 1330
+preplace netloc xlconstant_0_dout 1 2 2 600 -280 930J
+preplace netloc processing_system7_0_FIXED_IO 1 1 4 NJ -430 NJ -430 NJ -430 NJ
+levelinfo -pg 1 -110 200 520 760 1130 1350 -top -520 -bot 700
+",
+}
+{
+   da_ps7_cnt: "1",
+}

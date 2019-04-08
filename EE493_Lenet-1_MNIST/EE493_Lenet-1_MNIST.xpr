@@ -40,13 +40,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="32"/>
-    <Option Name="WTModelSimExportSim" Val="32"/>
-    <Option Name="WTQuestaExportSim" Val="32"/>
-    <Option Name="WTIesExportSim" Val="32"/>
-    <Option Name="WTVcsExportSim" Val="32"/>
-    <Option Name="WTRivieraExportSim" Val="32"/>
-    <Option Name="WTActivehdlExportSim" Val="32"/>
+    <Option Name="WTXSimExportSim" Val="33"/>
+    <Option Name="WTModelSimExportSim" Val="33"/>
+    <Option Name="WTQuestaExportSim" Val="33"/>
+    <Option Name="WTIesExportSim" Val="33"/>
+    <Option Name="WTVcsExportSim" Val="33"/>
+    <Option Name="WTRivieraExportSim" Val="33"/>
+    <Option Name="WTActivehdlExportSim" Val="33"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -61,32 +61,38 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/bd/sc7z010_demo/sc7z010_demo.bd">
+      <File Path="$PSRCDIR/sources_1/bd/zybo_z7_10_ps/zybo_z7_10_ps.bd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="sc7z010_demo.bd" FileRelPathName="ip/sc7z010_demo_axi_gpio_0_0/sc7z010_demo_axi_gpio_0_0.xci">
-          <Proxy FileSetName="sc7z010_demo_axi_gpio_0_0"/>
+        <CompFileExtendedInfo CompFileName="zybo_z7_10_ps.bd" FileRelPathName="ip/zybo_z7_10_ps_auto_pc_1/zybo_z7_10_ps_auto_pc_1.xci">
+          <Proxy FileSetName="zybo_z7_10_ps_auto_pc_1"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="sc7z010_demo.bd" FileRelPathName="ip/sc7z010_demo_rst_ps7_0_50M_0/sc7z010_demo_rst_ps7_0_50M_0.xci">
-          <Proxy FileSetName="sc7z010_demo_rst_ps7_0_50M_0"/>
+        <CompFileExtendedInfo CompFileName="zybo_z7_10_ps.bd" FileRelPathName="ip/zybo_z7_10_ps_rst_ps7_0_100M_0/zybo_z7_10_ps_rst_ps7_0_100M_0.xci">
+          <Proxy FileSetName="zybo_z7_10_ps_rst_ps7_0_100M_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="sc7z010_demo.bd" FileRelPathName="ip/sc7z010_demo_xbar_0/sc7z010_demo_xbar_0.xci">
-          <Proxy FileSetName="sc7z010_demo_xbar_0"/>
+        <CompFileExtendedInfo CompFileName="zybo_z7_10_ps.bd" FileRelPathName="ip/zybo_z7_10_ps_processing_system7_0_0/zybo_z7_10_ps_processing_system7_0_0.xci">
+          <Proxy FileSetName="zybo_z7_10_ps_processing_system7_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="sc7z010_demo.bd" FileRelPathName="ip/sc7z010_demo_processing_system7_0_0/sc7z010_demo_processing_system7_0_0.xci">
-          <Proxy FileSetName="sc7z010_demo_processing_system7_0_0"/>
+        <CompFileExtendedInfo CompFileName="zybo_z7_10_ps.bd" FileRelPathName="ip/zybo_z7_10_ps_axi_gpio_0_0/zybo_z7_10_ps_axi_gpio_0_0.xci">
+          <Proxy FileSetName="zybo_z7_10_ps_axi_gpio_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="sc7z010_demo.bd" FileRelPathName="ip/sc7z010_demo_blk_mem_gen_0_0/sc7z010_demo_blk_mem_gen_0_0.xci">
-          <Proxy FileSetName="sc7z010_demo_blk_mem_gen_0_0"/>
+        <CompFileExtendedInfo CompFileName="zybo_z7_10_ps.bd" FileRelPathName="ip/zybo_z7_10_ps_xbar_0/zybo_z7_10_ps_xbar_0.xci">
+          <Proxy FileSetName="zybo_z7_10_ps_xbar_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="sc7z010_demo.bd" FileRelPathName="ip/sc7z010_demo_axi_bram_ctrl_0_0/sc7z010_demo_axi_bram_ctrl_0_0.xci">
-          <Proxy FileSetName="sc7z010_demo_axi_bram_ctrl_0_0"/>
+        <CompFileExtendedInfo CompFileName="zybo_z7_10_ps.bd" FileRelPathName="ip/zybo_z7_10_ps_blk_mem_gen_0_0/zybo_z7_10_ps_blk_mem_gen_0_0.xci">
+          <Proxy FileSetName="zybo_z7_10_ps_blk_mem_gen_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="zybo_z7_10_ps.bd" FileRelPathName="ip/zybo_z7_10_ps_axi_bram_ctrl_0_0/zybo_z7_10_ps_axi_bram_ctrl_0_0.xci">
+          <Proxy FileSetName="zybo_z7_10_ps_axi_bram_ctrl_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="zybo_z7_10_ps.bd" FileRelPathName="ip/zybo_z7_10_ps_auto_pc_0/zybo_z7_10_ps_auto_pc_0.xci">
+          <Proxy FileSetName="zybo_z7_10_ps_auto_pc_0"/>
         </CompFileExtendedInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/bd/sc7z010_demo/hdl/sc7z010_demo_wrapper.vhd">
+      <File Path="$PSRCDIR/sources_1/bd/zybo_z7_10_ps/hdl/zybo_z7_10_ps_wrapper.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -240,9 +246,17 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/bd/zybo_z7_10_ps_axi/zybo_z7_10_ps_axi.bd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="sc7z010_demo_wrapper"/>
+        <Option Name="TopModule" Val="zybo_z7_10_ps_wrapper"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -296,42 +310,6 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="sc7z010_demo_processing_system7_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/sc7z010_demo_processing_system7_0_0">
-      <Config>
-        <Option Name="TopModule" Val="sc7z010_demo_processing_system7_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="sc7z010_demo_axi_gpio_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/sc7z010_demo_axi_gpio_0_0">
-      <Config>
-        <Option Name="TopModule" Val="sc7z010_demo_axi_gpio_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="sc7z010_demo_axi_bram_ctrl_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/sc7z010_demo_axi_bram_ctrl_0_0">
-      <Config>
-        <Option Name="TopModule" Val="sc7z010_demo_axi_bram_ctrl_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="sc7z010_demo_blk_mem_gen_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/sc7z010_demo_blk_mem_gen_0_0">
-      <Config>
-        <Option Name="TopModule" Val="sc7z010_demo_blk_mem_gen_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="sc7z010_demo_rst_ps7_0_50M_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/sc7z010_demo_rst_ps7_0_50M_0">
-      <Config>
-        <Option Name="TopModule" Val="sc7z010_demo_rst_ps7_0_50M_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="sc7z010_demo_xbar_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/sc7z010_demo_xbar_0">
-      <Config>
-        <Option Name="TopModule" Val="sc7z010_demo_xbar_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="PS_constraints" Type="Constrs" RelSrcDir="$PSRCDIR/PS_constraints">
       <File Path="$PSRCDIR/PS_constraints/new/gpio.xdc">
         <FileInfo>
@@ -341,6 +319,54 @@
       </File>
       <Config>
         <Option Name="ConstrsType" Val="XDC"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="zybo_z7_10_ps_processing_system7_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/zybo_z7_10_ps_processing_system7_0_0">
+      <Config>
+        <Option Name="TopModule" Val="zybo_z7_10_ps_processing_system7_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="zybo_z7_10_ps_axi_gpio_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/zybo_z7_10_ps_axi_gpio_0_0">
+      <Config>
+        <Option Name="TopModule" Val="zybo_z7_10_ps_axi_gpio_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="zybo_z7_10_ps_axi_bram_ctrl_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/zybo_z7_10_ps_axi_bram_ctrl_0_0">
+      <Config>
+        <Option Name="TopModule" Val="zybo_z7_10_ps_axi_bram_ctrl_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="zybo_z7_10_ps_blk_mem_gen_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/zybo_z7_10_ps_blk_mem_gen_0_0">
+      <Config>
+        <Option Name="TopModule" Val="zybo_z7_10_ps_blk_mem_gen_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="zybo_z7_10_ps_rst_ps7_0_100M_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/zybo_z7_10_ps_rst_ps7_0_100M_0">
+      <Config>
+        <Option Name="TopModule" Val="zybo_z7_10_ps_rst_ps7_0_100M_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="zybo_z7_10_ps_xbar_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/zybo_z7_10_ps_xbar_0">
+      <Config>
+        <Option Name="TopModule" Val="zybo_z7_10_ps_xbar_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="zybo_z7_10_ps_auto_pc_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/zybo_z7_10_ps_auto_pc_0">
+      <Config>
+        <Option Name="TopModule" Val="zybo_z7_10_ps_auto_pc_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="zybo_z7_10_ps_auto_pc_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/zybo_z7_10_ps_auto_pc_1">
+      <Config>
+        <Option Name="TopModule" Val="zybo_z7_10_ps_auto_pc_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
   </FileSets>
@@ -398,7 +424,7 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="sc7z010_demo_processing_system7_0_0_synth_1" Type="Ft3:Synth" SrcSet="sc7z010_demo_processing_system7_0_0" Part="xc7z010clg400-1" ConstrsSet="sc7z010_demo_processing_system7_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/sc7z010_demo_processing_system7_0_0_synth_1" IncludeInArchive="true">
+    <Run Id="zybo_z7_10_ps_processing_system7_0_0_synth_1" Type="Ft3:Synth" SrcSet="zybo_z7_10_ps_processing_system7_0_0" Part="xc7z010clg400-1" ConstrsSet="zybo_z7_10_ps_processing_system7_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/zybo_z7_10_ps_processing_system7_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -409,7 +435,7 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="sc7z010_demo_axi_gpio_0_0_synth_1" Type="Ft3:Synth" SrcSet="sc7z010_demo_axi_gpio_0_0" Part="xc7z010clg400-1" ConstrsSet="sc7z010_demo_axi_gpio_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/sc7z010_demo_axi_gpio_0_0_synth_1" IncludeInArchive="true">
+    <Run Id="zybo_z7_10_ps_axi_gpio_0_0_synth_1" Type="Ft3:Synth" SrcSet="zybo_z7_10_ps_axi_gpio_0_0" Part="xc7z010clg400-1" ConstrsSet="zybo_z7_10_ps_axi_gpio_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/zybo_z7_10_ps_axi_gpio_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -420,7 +446,7 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="sc7z010_demo_axi_bram_ctrl_0_0_synth_1" Type="Ft3:Synth" SrcSet="sc7z010_demo_axi_bram_ctrl_0_0" Part="xc7z010clg400-1" ConstrsSet="sc7z010_demo_axi_bram_ctrl_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/sc7z010_demo_axi_bram_ctrl_0_0_synth_1" IncludeInArchive="true">
+    <Run Id="zybo_z7_10_ps_axi_bram_ctrl_0_0_synth_1" Type="Ft3:Synth" SrcSet="zybo_z7_10_ps_axi_bram_ctrl_0_0" Part="xc7z010clg400-1" ConstrsSet="zybo_z7_10_ps_axi_bram_ctrl_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/zybo_z7_10_ps_axi_bram_ctrl_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -431,7 +457,7 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="sc7z010_demo_blk_mem_gen_0_0_synth_1" Type="Ft3:Synth" SrcSet="sc7z010_demo_blk_mem_gen_0_0" Part="xc7z010clg400-1" ConstrsSet="sc7z010_demo_blk_mem_gen_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/sc7z010_demo_blk_mem_gen_0_0_synth_1" IncludeInArchive="true">
+    <Run Id="zybo_z7_10_ps_blk_mem_gen_0_0_synth_1" Type="Ft3:Synth" SrcSet="zybo_z7_10_ps_blk_mem_gen_0_0" Part="xc7z010clg400-1" ConstrsSet="zybo_z7_10_ps_blk_mem_gen_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/zybo_z7_10_ps_blk_mem_gen_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -442,7 +468,7 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="sc7z010_demo_rst_ps7_0_50M_0_synth_1" Type="Ft3:Synth" SrcSet="sc7z010_demo_rst_ps7_0_50M_0" Part="xc7z010clg400-1" ConstrsSet="sc7z010_demo_rst_ps7_0_50M_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/sc7z010_demo_rst_ps7_0_50M_0_synth_1" IncludeInArchive="true">
+    <Run Id="zybo_z7_10_ps_rst_ps7_0_100M_0_synth_1" Type="Ft3:Synth" SrcSet="zybo_z7_10_ps_rst_ps7_0_100M_0" Part="xc7z010clg400-1" ConstrsSet="zybo_z7_10_ps_rst_ps7_0_100M_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/zybo_z7_10_ps_rst_ps7_0_100M_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -453,7 +479,7 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="sc7z010_demo_xbar_0_synth_1" Type="Ft3:Synth" SrcSet="sc7z010_demo_xbar_0" Part="xc7z010clg400-1" ConstrsSet="sc7z010_demo_xbar_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/sc7z010_demo_xbar_0_synth_1" IncludeInArchive="true">
+    <Run Id="zybo_z7_10_ps_xbar_0_synth_1" Type="Ft3:Synth" SrcSet="zybo_z7_10_ps_xbar_0" Part="xc7z010clg400-1" ConstrsSet="zybo_z7_10_ps_xbar_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/zybo_z7_10_ps_xbar_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -464,7 +490,29 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="xc7z010_demo" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z010clg400-1" ConstrsSet="PS_constraints" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/xc7z010_demo" IncludeInArchive="true">
+    <Run Id="zybo_z7_10_ps_auto_pc_0_synth_1" Type="Ft3:Synth" SrcSet="zybo_z7_10_ps_auto_pc_0" Part="xc7z010clg400-1" ConstrsSet="zybo_z7_10_ps_auto_pc_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/zybo_z7_10_ps_auto_pc_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="zybo_z7_10_ps_auto_pc_1_synth_1" Type="Ft3:Synth" SrcSet="zybo_z7_10_ps_auto_pc_1" Part="xc7z010clg400-1" ConstrsSet="zybo_z7_10_ps_auto_pc_1" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/zybo_z7_10_ps_auto_pc_1_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="synth_zybo_z7_10" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z010clg400-1" ConstrsSet="PS_constraints" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_zybo_z7_10" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -523,7 +571,7 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="sc7z010_demo_processing_system7_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="sc7z010_demo_processing_system7_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="sc7z010_demo_processing_system7_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+    <Run Id="zybo_z7_10_ps_processing_system7_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="zybo_z7_10_ps_processing_system7_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="zybo_z7_10_ps_processing_system7_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
           <Desc>Default settings for Implementation.</Desc>
@@ -541,7 +589,7 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="sc7z010_demo_axi_gpio_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="sc7z010_demo_axi_gpio_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="sc7z010_demo_axi_gpio_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+    <Run Id="zybo_z7_10_ps_axi_gpio_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="zybo_z7_10_ps_axi_gpio_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="zybo_z7_10_ps_axi_gpio_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
           <Desc>Default settings for Implementation.</Desc>
@@ -559,7 +607,7 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="sc7z010_demo_axi_bram_ctrl_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="sc7z010_demo_axi_bram_ctrl_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="sc7z010_demo_axi_bram_ctrl_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+    <Run Id="zybo_z7_10_ps_axi_bram_ctrl_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="zybo_z7_10_ps_axi_bram_ctrl_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="zybo_z7_10_ps_axi_bram_ctrl_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
           <Desc>Default settings for Implementation.</Desc>
@@ -577,7 +625,7 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="sc7z010_demo_blk_mem_gen_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="sc7z010_demo_blk_mem_gen_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="sc7z010_demo_blk_mem_gen_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+    <Run Id="zybo_z7_10_ps_blk_mem_gen_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="zybo_z7_10_ps_blk_mem_gen_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="zybo_z7_10_ps_blk_mem_gen_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
           <Desc>Default settings for Implementation.</Desc>
@@ -595,7 +643,7 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="sc7z010_demo_rst_ps7_0_50M_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="sc7z010_demo_rst_ps7_0_50M_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="sc7z010_demo_rst_ps7_0_50M_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+    <Run Id="zybo_z7_10_ps_rst_ps7_0_100M_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="zybo_z7_10_ps_rst_ps7_0_100M_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="zybo_z7_10_ps_rst_ps7_0_100M_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
           <Desc>Default settings for Implementation.</Desc>
@@ -613,7 +661,7 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="sc7z010_demo_xbar_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="sc7z010_demo_xbar_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="sc7z010_demo_xbar_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+    <Run Id="zybo_z7_10_ps_xbar_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="zybo_z7_10_ps_xbar_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="zybo_z7_10_ps_xbar_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
           <Desc>Default settings for Implementation.</Desc>
@@ -631,7 +679,7 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="impl_2" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="xc7z010_demo" IncludeInArchive="true" GenFullBitstream="true">
+    <Run Id="zybo_z7_10_ps_auto_pc_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="zybo_z7_10_ps_auto_pc_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="zybo_z7_10_ps_auto_pc_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
           <Desc>Default settings for Implementation.</Desc>
@@ -649,7 +697,25 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="impl_xc7z010_demo" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="PS_constraints" Description="Default settings for Implementation." WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_xc7z010_demo" SynthRun="xc7z010_demo" IncludeInArchive="true" GenFullBitstream="true">
+    <Run Id="zybo_z7_10_ps_auto_pc_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="zybo_z7_10_ps_auto_pc_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="zybo_z7_10_ps_auto_pc_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="impl_zybo_z7_10" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="PS_constraints" Description="Default settings for Implementation." WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_zybo_z7_10" SynthRun="synth_zybo_z7_10" IncludeInArchive="true" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
           <Desc>Default settings for Implementation.</Desc>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="zybo_z7_10_ps_processing_system7_0_0_synth_1" LaunchDir="G:/Documents/EE493_VHDL/EE493_Lenet-1_MNIST/EE493_Lenet-1_MNIST.runs/zybo_z7_10_ps_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zybo_z7_10_ps_axi_gpio_0_0_synth_1" LaunchDir="G:/Documents/EE493_VHDL/EE493_Lenet-1_MNIST/EE493_Lenet-1_MNIST.runs/zybo_z7_10_ps_axi_gpio_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zybo_z7_10_ps_axi_bram_ctrl_0_0_synth_1" LaunchDir="G:/Documents/EE493_VHDL/EE493_Lenet-1_MNIST/EE493_Lenet-1_MNIST.runs/zybo_z7_10_ps_axi_bram_ctrl_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zybo_z7_10_ps_blk_mem_gen_0_0_synth_1" LaunchDir="G:/Documents/EE493_VHDL/EE493_Lenet-1_MNIST/EE493_Lenet-1_MNIST.runs/zybo_z7_10_ps_blk_mem_gen_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zybo_z7_10_ps_rst_ps7_0_100M_0_synth_1" LaunchDir="G:/Documents/EE493_VHDL/EE493_Lenet-1_MNIST/EE493_Lenet-1_MNIST.runs/zybo_z7_10_ps_rst_ps7_0_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zybo_z7_10_ps_xbar_0_synth_1" LaunchDir="G:/Documents/EE493_VHDL/EE493_Lenet-1_MNIST/EE493_Lenet-1_MNIST.runs/zybo_z7_10_ps_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zybo_z7_10_ps_auto_pc_0_synth_1" LaunchDir="G:/Documents/EE493_VHDL/EE493_Lenet-1_MNIST/EE493_Lenet-1_MNIST.runs/zybo_z7_10_ps_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zybo_z7_10_ps_auto_pc_1_synth_1" LaunchDir="G:/Documents/EE493_VHDL/EE493_Lenet-1_MNIST/EE493_Lenet-1_MNIST.runs/zybo_z7_10_ps_auto_pc_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+
